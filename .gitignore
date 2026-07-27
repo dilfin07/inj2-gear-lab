@@ -1,0 +1,23 @@
+# Game sources and anything extracted from them — kept outside the repo.
+# Restore with:  ln -s ../inj2-simcraft-source/extract extract
+/extract
+*.apk
+*.pak
+*.obb
+
+# Generated during reverse engineering (regenerate with the tools)
+/data/raw_*.json
+/tools/syms*.txt
+/tools/ue4_strings.txt
+/tools/oodle/libooz.dylib
+/tools/findkey
+/tools/ooz-master/
+
+# Python / OS noise
+__pycache__/
+*.py[cod]
+.DS_Store
+*.bak
+
+# Local agent/editor config
+/.claude/

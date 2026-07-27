@@ -1,0 +1,3249 @@
+{
+ "starRatingStatTable": [
+  {
+   "baseAttackScalar": 0.30000001192092896,
+   "baseHealthScalar": 0.30000001192092896,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 0.30000001192092896,
+   "healthScalarScalar": 0.30000001192092896
+  },
+  {
+   "baseAttackScalar": 0.44999998807907104,
+   "baseHealthScalar": 0.44999998807907104,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 0.44999998807907104,
+   "healthScalarScalar": 0.44999998807907104
+  },
+  {
+   "baseAttackScalar": 0.6000000238418579,
+   "baseHealthScalar": 0.6000000238418579,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 0.6000000238418579,
+   "healthScalarScalar": 0.6000000238418579
+  },
+  {
+   "baseAttackScalar": 0.800000011920929,
+   "baseHealthScalar": 0.800000011920929,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 0.800000011920929,
+   "healthScalarScalar": 0.800000011920929
+  },
+  {
+   "baseAttackScalar": 1.0,
+   "baseHealthScalar": 1.0,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 1.0,
+   "healthScalarScalar": 1.0
+  },
+  {
+   "baseAttackScalar": 1.2000000476837158,
+   "baseHealthScalar": 1.2000000476837158,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 1.2000000476837158,
+   "healthScalarScalar": 1.2000000476837158
+  },
+  {
+   "baseAttackScalar": 1.4700000286102295,
+   "baseHealthScalar": 1.4700000286102295,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 1.4700000286102295,
+   "healthScalarScalar": 1.4700000286102295
+  },
+  {
+   "baseAttackScalar": 1.600000023841858,
+   "baseHealthScalar": 1.600000023841858,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 1.600000023841858,
+   "healthScalarScalar": 1.600000023841858
+  },
+  {
+   "baseAttackScalar": 1.7000000476837158,
+   "baseHealthScalar": 1.7000000476837158,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 1.7000000476837158,
+   "healthScalarScalar": 1.7000000476837158
+  },
+  {
+   "baseAttackScalar": 1.7999999523162842,
+   "baseHealthScalar": 1.7999999523162842,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 1.7999999523162842,
+   "healthScalarScalar": 1.7999999523162842
+  },
+  {
+   "baseAttackScalar": 2.0,
+   "baseHealthScalar": 2.0,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 2.0,
+   "healthScalarScalar": 2.0
+  },
+  {
+   "baseAttackScalar": 2.200000047683716,
+   "baseHealthScalar": 2.200000047683716,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 2.200000047683716,
+   "healthScalarScalar": 2.200000047683716
+  },
+  {
+   "baseAttackScalar": 2.4000000953674316,
+   "baseHealthScalar": 2.4000000953674316,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 2.4000000953674316,
+   "healthScalarScalar": 2.4000000953674316
+  },
+  {
+   "baseAttackScalar": 2.5999999046325684,
+   "baseHealthScalar": 2.5999999046325684,
+   "critScalar": 1.0,
+   "lethalScalar": 1.0,
+   "defenseScalar": 1.0,
+   "recoveryScalar": 1.0,
+   "attackScalarScalar": 2.5999999046325684,
+   "healthScalarScalar": 2.5999999046325684
+  }
+ ],
+ "maxLevelPerStar": [
+  {
+   "StarRating": 1,
+   "MaxLevel": 70
+  },
+  {
+   "StarRating": 2,
+   "MaxLevel": 70
+  },
+  {
+   "StarRating": 3,
+   "MaxLevel": 70
+  },
+  {
+   "StarRating": 4,
+   "MaxLevel": 70
+  },
+  {
+   "StarRating": 5,
+   "MaxLevel": 70
+  },
+  {
+   "StarRating": 6,
+   "MaxLevel": 70
+  },
+  {
+   "StarRating": 7,
+   "MaxLevel": 80
+  },
+  {
+   "StarRating": 8,
+   "MaxLevel": 80
+  },
+  {
+   "StarRating": 9,
+   "MaxLevel": 80
+  },
+  {
+   "StarRating": 10,
+   "MaxLevel": 80
+  },
+  {
+   "StarRating": 11,
+   "MaxLevel": 80
+  },
+  {
+   "StarRating": 12,
+   "MaxLevel": 80
+  },
+  {
+   "StarRating": 13,
+   "MaxLevel": 80
+  },
+  {
+   "StarRating": 14,
+   "MaxLevel": 80
+  }
+ ],
+ "requiredXpToNextLevel": [
+  100,
+  125,
+  150,
+  175,
+  200,
+  250,
+  300,
+  350,
+  400,
+  450,
+  500,
+  550,
+  600,
+  650,
+  700,
+  750,
+  800,
+  850,
+  900,
+  950,
+  1000,
+  1050,
+  1150,
+  1250,
+  1350,
+  1450,
+  1550,
+  1650,
+  1850,
+  2150,
+  2550,
+  3050,
+  3750,
+  4750,
+  5950,
+  7450,
+  9250,
+  11250,
+  13250,
+  15250,
+  17250,
+  19250,
+  21250,
+  23250,
+  25250,
+  27250,
+  29250,
+  31250,
+  33250,
+  38250,
+  43250,
+  48250,
+  53250,
+  58250,
+  68250,
+  78250,
+  88250,
+  98250,
+  108250,
+  118250,
+  128250,
+  138250,
+  148250,
+  158250,
+  168250,
+  178250,
+  188250,
+  198250,
+  208250,
+  268250,
+  318250,
+  368250,
+  418250,
+  468250,
+  518250,
+  568250,
+  618250,
+  668250,
+  718250,
+  718250
+ ],
+ "shardGrowthTables": {
+  "Fast": [
+   10,
+   20,
+   80,
+   160,
+   300,
+   230,
+   230,
+   230,
+   230,
+   230,
+   230,
+   230,
+   230,
+   230
+  ],
+  "Normal": [
+   10,
+   20,
+   80,
+   160,
+   300,
+   230,
+   230,
+   250,
+   250,
+   250,
+   250,
+   250,
+   250,
+   250
+  ],
+  "Slow": [
+   20,
+   40,
+   100,
+   200,
+   440,
+   300,
+   360,
+   400,
+   400,
+   400,
+   400,
+   400,
+   400,
+   400
+  ],
+  "VerySlow": [
+   25,
+   50,
+   125,
+   250,
+   450,
+   450,
+   450,
+   450,
+   450,
+   450,
+   450,
+   450,
+   450,
+   450
+  ],
+  "Extreme": [
+   999,
+   999,
+   999,
+   999,
+   999,
+   999,
+   999,
+   999,
+   999,
+   999,
+   999,
+   999,
+   999,
+   999
+  ]
+ },
+ "classBonusMatrix": [
+  {
+   "BonusesAndPenalties[2]": 0.20000000298023224,
+   "BonusesAndPenalties[3]": -0.10000000149011612
+  },
+  null,
+  {
+   "BonusesAndPenalties": -0.10000000149011612,
+   "BonusesAndPenalties[4]": 0.20000000298023224
+  },
+  {
+   "BonusesAndPenalties": 0.20000000298023224,
+   "BonusesAndPenalties[4]": -0.10000000149011612
+  },
+  {
+   "BonusesAndPenalties[2]": -0.10000000149011612,
+   "BonusesAndPenalties[3]": 0.20000000298023224
+  }
+ ],
+ "caps": {
+  "AttackToPercentDamageIncrease": 1.0,
+  "AttackToPercentHealIncrease": 1.0,
+  "CriticalHitChanceCap": 0.75,
+  "CritMultiplierCap": 3.0,
+  "CritChanceReductionCap": 0.699999988079071,
+  "CritMultiplierReductionCap": 0.5,
+  "LethalAttackChanceCap": 0.6000000238418579,
+  "LethalChanceReductionCap": 0.550000011920929,
+  "LethalDamageBonusCap": 2.0,
+  "FastAttackChanceCap": 0.75,
+  "NumFastAttackHitsCap": 4.0,
+  "FastAttackChanceReductionCap": 0.699999988079071,
+  "FastAttackHitsReductionCap": 3.0,
+  "StunChanceReductionCap": 0.75,
+  "StunDurationReductionCap": 1.5,
+  "DOTChanceReductionCap": 0.75,
+  "PowerDrainChanceReductionCap": 0.75,
+  "PowerDrainedReductionCap": 1.5,
+  "StunDamageBonus": 0.20000000298023224,
+  "LethalDamageBonus": 0.10000000149011612
+ },
+ "threat": {
+  "AttackWeight": 10.0,
+  "HealthWeight": 1.0,
+  "RecoveryWeight": 1.0,
+  "Special1Weight": 0.003000000026077032,
+  "Special2Weight": 0.003000000026077032,
+  "Special3Weight": 0.003000000026077032,
+  "SuperMoveWeight": 0.0,
+  "PassiveWeight": 0.05000000074505806,
+  "Passive2Weight": 0.05000000074505806,
+  "Passive3Weight": 0.05000000074505806,
+  "ClassPassiveWeight": 0.10000000149011612,
+  "ArtifactWeight": 0.10000000149011612,
+  "ArtifactCommonRandomEffectWeight": 0.014000000432133675,
+  "ArtifactRareRandomEffectWeight": 0.02800000086426735,
+  "ArtifactEpicRandomEffectWeight": 0.0560000017285347,
+  "CritAttackWeight": 1.0,
+  "FastAttackWeight": 1.0,
+  "LethalChanceWeight": 2.0,
+  "ArmorPierceChanceWeight": 1.0,
+  "CritChanceResistanceWeight": 0.800000011920929,
+  "StunChanceResistanceWeight": 0.800000011920929,
+  "DOTChanceResistanceWeight": 0.800000011920929,
+  "BlockMitigationWeight": 1.0,
+  "TwoPersonTeamHighThreatWeight": 1.0,
+  "TwoPersonTeamLowThreatWeight": 1.0,
+  "TeamHighestThreatWeight": 1.0,
+  "TeamSecondHighestThreatWeight": 1.0,
+  "TeamThirdAndLowerThreatWeight": 1.0,
+  "StarRatingScalars": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "StarRatingScalars[1]": 1.0,
+  "StarRatingScalars[2]": 1.0,
+  "StarRatingScalars[3]": 1.0,
+  "StarRatingScalars[4]": 1.0,
+  "StarRatingScalars[5]": 1.0,
+  "StarRatingScalars[6]": 1.0,
+  "StarRatingScalars[7]": 1.0,
+  "StarRatingScalars[8]": 1.0,
+  "StarRatingScalars[9]": 1.0,
+  "StarRatingScalars[10]": 1.0,
+  "StarRatingScalars[11]": 1.0,
+  "StarRatingScalars[12]": 1.0,
+  "StarRatingScalars[13]": 1.0,
+  "ProfileThreatWeights": [
+   1.5,
+   1.4500000476837158,
+   1.399999976158142,
+   1.350000023841858,
+   1.2999999523162842,
+   1.25,
+   1.2000000476837158,
+   1.149999976158142,
+   1.100000023841858,
+   1.0499999523162842,
+   1.0
+  ],
+  "_skillSlotWeightOrder": [
+   "Special1Weight",
+   "Special2Weight",
+   "Special3Weight",
+   "PassiveWeight",
+   "SuperMoveWeight",
+   "Passive2Weight",
+   "Passive3Weight",
+   "ClassPassiveWeight"
+  ]
+ },
+ "gear": {
+  "maxGearLevel": 80,
+  "gearPointsNeededToLevelUp": {
+   "Common": [
+    20,
+    40,
+    60,
+    80,
+    100,
+    120,
+    140,
+    180,
+    220,
+    280,
+    320,
+    380,
+    440,
+    500,
+    640,
+    700,
+    780,
+    860,
+    960,
+    1040,
+    1140,
+    1240,
+    1340,
+    1440,
+    1560,
+    1660,
+    1780,
+    1900,
+    2040,
+    2160,
+    2300,
+    2440,
+    2580,
+    2720,
+    2880,
+    3020,
+    3180,
+    3340,
+    3520,
+    4000,
+    4180,
+    4360,
+    4560,
+    4760,
+    4940,
+    5160,
+    5360,
+    5560,
+    5780,
+    6000,
+    6220,
+    6440,
+    6680,
+    6920,
+    7140,
+    7400,
+    7640,
+    7880,
+    8140,
+    8400,
+    8660,
+    8920,
+    9180,
+    9440,
+    9700,
+    9960,
+    10220,
+    10480,
+    10740,
+    11000,
+    11300,
+    11600,
+    11910,
+    12220,
+    12540,
+    12860,
+    13190,
+    13520,
+    13860,
+    14200
+   ],
+   "Rare": [
+    30,
+    75,
+    120,
+    165,
+    210,
+    255,
+    300,
+    345,
+    390,
+    450,
+    510,
+    570,
+    630,
+    690,
+    750,
+    810,
+    870,
+    930,
+    990,
+    1065,
+    1140,
+    1215,
+    1290,
+    1365,
+    1440,
+    1515,
+    1590,
+    1665,
+    1740,
+    1830,
+    1920,
+    2010,
+    2190,
+    2280,
+    2370,
+    2460,
+    2550,
+    2640,
+    2745,
+    2850,
+    2955,
+    3060,
+    3165,
+    3285,
+    3405,
+    3525,
+    3645,
+    3765,
+    3915,
+    4065,
+    4215,
+    4365,
+    4515,
+    4700,
+    4885,
+    5070,
+    5255,
+    5440,
+    5665,
+    5890,
+    6115,
+    6340,
+    6565,
+    6790,
+    7015,
+    7240,
+    7465,
+    7690,
+    7915,
+    8140,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Epic": [
+    40,
+    100,
+    160,
+    220,
+    280,
+    340,
+    400,
+    460,
+    520,
+    600,
+    680,
+    760,
+    840,
+    920,
+    1000,
+    1080,
+    1160,
+    1240,
+    1320,
+    1420,
+    1520,
+    1620,
+    1720,
+    1820,
+    1920,
+    2020,
+    2120,
+    2220,
+    2320,
+    2440,
+    2560,
+    2680,
+    2800,
+    2920,
+    3040,
+    3160,
+    3280,
+    3400,
+    3520,
+    3660,
+    3800,
+    3940,
+    4080,
+    4220,
+    4380,
+    4540,
+    4700,
+    4860,
+    5020,
+    5220,
+    5420,
+    5620,
+    5820,
+    6020,
+    6280,
+    6540,
+    6800,
+    7060,
+    7320,
+    7660,
+    8000,
+    8340,
+    8680,
+    9020,
+    9360,
+    9700,
+    10040,
+    10380,
+    10720,
+    11060,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "Legendary": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    510,
+    600,
+    690,
+    780,
+    900,
+    1020,
+    1140,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "levelsWhereRandomEffectsAreAdded": [
+   5,
+   20,
+   40,
+   75
+  ],
+  "reforges": {
+   "ECurrencyType::ModMaterial": {
+    "ReforgeCosts": 1,
+    "ReforgeCosts[1]": 2,
+    "ReforgeCosts[2]": 3,
+    "ReforgeCosts[3]": 5,
+    "MaxBulkReforgeAmount": 10,
+    "EffectRarityDropWeight": 8.0,
+    "EffectRarityDropWeight[1]": 2.0,
+    "EffectRarityDropWeight[2]": 0.0,
+    "EffectRarityDropWeight[3]": 0.0,
+    "AvailableInSlots": [
+     1,
+     2,
+     3
+    ]
+   },
+   "ECurrencyType::RareModMaterial": {
+    "ReforgeCosts": 1,
+    "ReforgeCosts[1]": 2,
+    "ReforgeCosts[2]": 3,
+    "ReforgeCosts[3]": 5,
+    "MaxBulkReforgeAmount": 10,
+    "EffectRarityDropWeight": 6.0,
+    "EffectRarityDropWeight[1]": 4.0,
+    "EffectRarityDropWeight[2]": 0.0,
+    "EffectRarityDropWeight[3]": 0.0,
+    "AvailableInSlots": [
+     1,
+     2,
+     3
+    ]
+   },
+   "ECurrencyType::EpicModMaterial": {
+    "ReforgeCosts": 1,
+    "ReforgeCosts[1]": 2,
+    "ReforgeCosts[2]": 3,
+    "ReforgeCosts[3]": 5,
+    "MaxBulkReforgeAmount": 10,
+    "EffectRarityDropWeight": 0.0,
+    "EffectRarityDropWeight[1]": 6.5,
+    "EffectRarityDropWeight[2]": 3.5,
+    "EffectRarityDropWeight[3]": 0.0,
+    "AvailableInSlots": [
+     4
+    ]
+   }
+  },
+  "artifactReforges": {
+   "ECurrencyType::ArtifactModMaterial": {
+    "ReforgeCost": 1,
+    "MaxBulkReforgeAmount": 10,
+    "UniversalGearNames": [
+     "Amulet_of_Agility",
+     "Amulet_of_Might",
+     "Amulet_of_Arcane",
+     "Amulet_of_Metahuman",
+     "Claw_of_Horus",
+     "Cosmic_Staff",
+     "The_All_Blades",
+     "Kryptonian_Regeneration_Matrix",
+     "Nth_Metal_Armor",
+     "Electro_Axe",
+     "Radion",
+     "Mega_Rod",
+     "Entropy_Aegis",
+     "Father_Box",
+     "HelmetOfYugaKhan",
+     "Fahren_Knife",
+     "CogOfMageddon",
+     "ObeliskOfUrgrund",
+     "Heart_of_Darkness",
+     "Amulet_of_Tech",
+     "Kryptonite_Spear",
+     "FlashingBlade",
+     "AstroHarness",
+     "Kryptonite_Ring",
+     "Kryptonite_Knife",
+     "Kryptonite_Gloves",
+     "Kryptonite_Bullets",
+     "BetaClub",
+     "MetallosPowerSource",
+     "LexCorpWarsuit",
+     "Ace_Of_Winchesters",
+     "Book_Of_Souls",
+     "Candle_Of_Neron",
+     "Chakra",
+     "Crown_Of_Horns",
+     "Philosophers_Stone",
+     "Rings_Of_Azar",
+     "Sword_Of_Salvation",
+     "Sword_Of_Sin",
+     "Trigons_Power_Staff",
+     "God_Killer",
+     "Ikon_Suit",
+     "Promethium_Sword",
+     "Speedforce_Battery",
+     "Energy_Lance",
+     "Legacy_Helmet",
+     "Promethium_Knife",
+     "Promethium_Grenades",
+     "Rocket_Boots",
+     "Promethium_Nunchucks",
+     "Black_Kryptonite",
+     "Chain_Batarang",
+     "Crime_Alley_Gun",
+     "Dark_Metal_Cards",
+     "Hand_of_Zatanna",
+     "Jokerized_Batarangs",
+     "Jokerized_Venom",
+     "Rib_Tickle",
+     "Sharp_Tongue",
+     "Thanagarian_Mace",
+     "Cryogenic_Handheld",
+     "Cryo_Battery",
+     "Cryo_Engine",
+     "Cure_Serum",
+     "Freeze_Grenade",
+     "High-Tech_Red_Goggles",
+     "Noras_Snow_Globe",
+     "Polar_Slippers",
+     "Robotic_Spider",
+     "Thermal_Gloves",
+     "S_Zatannas_Puppet",
+     "S_Soul_Crystal",
+     "A_The_Book_Of_Zatara",
+     "A_Magic_Wand",
+     "A_Magicians_Cape",
+     "A_The_Talisman_Of_Atlantis",
+     "B_Zatannas_Junior_Magic_Kit",
+     "B_Boutonniere",
+     "B_Magic_Ball",
+     "B_Illusionist_Cards",
+     "S_Amulet_of_Hatshepsut",
+     "S_Crown_of_Khandaq_Ruler",
+     "A_Orb_of_Ra",
+     "A_Amulet_of_Anubis",
+     "A_Khandaq_Royal_Cape",
+     "A_Statues_of_the_Gods",
+     "B_Little_Pyramid",
+     "B_Clockwerk_Camel",
+     "B_Ankh",
+     "B_Bastet_Mask",
+     "S_Trinity_Rings",
+     "S_Sharp_Scythe",
+     "A_Particle_Accelerator",
+     "A_Anti-Living_Seeds",
+     "A_Harleys_Mallet",
+     "A_Neron_Knife",
+     "B_Sound_of_the_Robin_King",
+     "B_Atez_Beam",
+     "B_Toxic_Bomb",
+     "B_Mortal_Coil",
+     "S_Moonblade",
+     "S_Twin_Blade",
+     "A_Grimorium_Verum",
+     "A_Pandoras_Box",
+     "A_Protecting_Necklace",
+     "A_Spear_of_Destiny",
+     "B_Frankincense_Lamp",
+     "B_Guide_Needle",
+     "B_Infernal_Guitar",
+     "B_Soul_Token",
+     "A_Gemstone",
+     "A_Muramasa_Blades",
+     "A_Scorpions_Claws",
+     "A_Tao_Te_Zhan",
+     "B_Demons_Heart",
+     "B_Scorpions_Sting",
+     "B_Secret_Scrolls_of_Shirai_Ryu",
+     "B_Soul_Stone",
+     "S_Amulet_of_Shinnok",
+     "S_Kamidogu_dagger",
+     "S_CosmicTreadmill",
+     "S_Flash_Ring",
+     "A_Phantom_Zone_Projector",
+     "A_Miracle_Machine",
+     "A_Harpoon_Hand",
+     "A_Lasso_Of_Truth",
+     "B_Utility_Belt",
+     "B_Amulet_Of_Harmonia",
+     "B_Sword_Of_Superman",
+     "B_Eternity_Book"
+    ],
+    "EffectRarityDropWeight": 8.0,
+    "EffectRarityDropWeight[1]": 1.5,
+    "EffectRarityDropWeight[2]": 0.5,
+    "EffectRarityDropWeight[3]": 0.0
+   },
+   "ECurrencyType::EpicArtifactModMaterial": {
+    "ReforgeCost": 1,
+    "MaxBulkReforgeAmount": 10,
+    "UniversalGearNames": [
+     "Amulet_of_Agility",
+     "Amulet_of_Might",
+     "Amulet_of_Arcane",
+     "Amulet_of_Metahuman",
+     "Claw_of_Horus",
+     "Cosmic_Staff",
+     "The_All_Blades",
+     "Kryptonian_Regeneration_Matrix",
+     "Nth_Metal_Armor",
+     "Electro_Axe",
+     "Radion",
+     "Mega_Rod",
+     "Entropy_Aegis",
+     "Father_Box",
+     "ObeliskOfUrgrund",
+     "CogOfMageddon",
+     "Fahren_Knife",
+     "HelmetOfYugaKhan",
+     "Heart_of_Darkness",
+     "Amulet_of_Tech",
+     "Kryptonite_Spear",
+     "FlashingBlade",
+     "AstroHarness",
+     "Kryptonite_Ring",
+     "Kryptonite_Knife",
+     "Kryptonite_Gloves",
+     "Kryptonite_Bullets",
+     "BetaClub",
+     "MetallosPowerSource",
+     "LexCorpWarsuit",
+     "Ace_Of_Winchesters",
+     "Book_Of_Souls",
+     "Candle_Of_Neron",
+     "Chakra",
+     "Crown_Of_Horns",
+     "Philosophers_Stone",
+     "Rings_Of_Azar",
+     "Sword_Of_Salvation",
+     "Sword_Of_Sin",
+     "Trigons_Power_Staff",
+     "God_Killer",
+     "Ikon_Suit",
+     "Promethium_Sword",
+     "Speedforce_Battery",
+     "Energy_Lance",
+     "Legacy_Helmet",
+     "Promethium_Knife",
+     "Promethium_Grenades",
+     "Rocket_Boots",
+     "Promethium_Nunchucks",
+     "Black_Kryptonite",
+     "Chain_Batarang",
+     "Crime_Alley_Gun",
+     "Dark_Metal_Cards",
+     "Hand_of_Zatanna",
+     "Jokerized_Batarangs",
+     "Jokerized_Venom",
+     "Rib_Tickle",
+     "Sharp_Tongue",
+     "Thanagarian_Mace",
+     "Cryogenic_Handheld",
+     "Cryo_Battery",
+     "Cryo_Engine",
+     "Cure_Serum",
+     "Freeze_Grenade",
+     "High-Tech_Red_Goggles",
+     "Noras_Snow_Globe",
+     "Polar_Slippers",
+     "Robotic_Spider",
+     "Thermal_Gloves",
+     "S_Zatannas_Puppet",
+     "S_Soul_Crystal",
+     "A_The_Book_Of_Zatara",
+     "A_Magic_Wand",
+     "A_Magicians_Cape",
+     "A_The_Talisman_Of_Atlantis",
+     "B_Zatannas_Junior_Magic_Kit",
+     "B_Boutonniere",
+     "B_Magic_Ball",
+     "B_Illusionist_Cards",
+     "S_Amulet_of_Hatshepsut",
+     "S_Crown_of_Khandaq_Ruler",
+     "A_Orb_of_Ra",
+     "A_Amulet_of_Anubis",
+     "A_Khandaq_Royal_Cape",
+     "A_Statues_of_the_Gods",
+     "B_Little_Pyramid",
+     "B_Clockwerk_Camel",
+     "B_Ankh",
+     "B_Bastet_Mask",
+     "S_Trinity_Rings",
+     "S_Sharp_Scythe",
+     "A_Particle_Accelerator",
+     "A_Anti-Living_Seeds",
+     "A_Harleys_Mallet",
+     "A_Neron_Knife",
+     "B_Sound_of_the_Robin_King",
+     "B_Atez_Beam",
+     "B_Toxic_Bomb",
+     "B_Mortal_Coil",
+     "S_Moonblade",
+     "S_Twin_Blade",
+     "A_Grimorium_Verum",
+     "A_Pandoras_Box",
+     "A_Protecting_Necklace",
+     "A_Spear_of_Destiny",
+     "B_Frankincense_Lamp",
+     "B_Guide_Needle",
+     "B_Infernal_Guitar",
+     "B_Soul_Token",
+     "A_Gemstone",
+     "A_Muramasa_Blades",
+     "A_Scorpions_Claws",
+     "A_Tao_Te_Zhan",
+     "B_Demons_Heart",
+     "B_Scorpions_Sting",
+     "B_Secret_Scrolls_of_Shirai_Ryu",
+     "B_Soul_Stone",
+     "S_Amulet_of_Shinnok",
+     "S_Kamidogu_dagger",
+     "S_CosmicTreadmill",
+     "S_Flash_Ring",
+     "A_Phantom_Zone_Projector",
+     "A_Miracle_Machine",
+     "A_Harpoon_Hand",
+     "A_Lasso_Of_Truth",
+     "B_Utility_Belt",
+     "B_Amulet_Of_Harmonia",
+     "B_Sword_Of_Superman",
+     "B_Eternity_Book"
+    ],
+    "EffectRarityDropWeight": 6.0,
+    "EffectRarityDropWeight[1]": 3.0,
+    "EffectRarityDropWeight[2]": 1.0,
+    "EffectRarityDropWeight[3]": 0.0
+   }
+  },
+  "artifactsOnlyEffectTypes": [
+   "ECharacterEffectGroupType::OmniResist",
+   "ECharacterEffectGroupType::PowerGeneration",
+   "ECharacterEffectGroupType::SP1Damage",
+   "ECharacterEffectGroupType::SP2Damage",
+   "ECharacterEffectGroupType::SP3Damage",
+   "ECharacterEffectGroupType::DoTDamage"
+  ],
+  "universalGearLevelCosts": [
+   {
+    "UniversalGearName": "Amulet_of_Agility",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Amulet_of_Might",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31000,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Amulet_of_Arcane",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Amulet_of_Metahuman",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Amulet_of_Tech",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31000,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Claw_of_Horus",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Cosmic_Staff",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "The_All_Blades",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Kryptonian_Regeneration_Matrix",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Nth_Metal_Armor",
+    "CurrencyType": "ECurrencyType::AzureArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Electro_Axe",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Radion",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Mega_Rod",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "HelmetOfYugaKhan",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Fahren_Knife",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "ObeliskOfUrgrund",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "CogOfMageddon",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Entropy_Aegis",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Father_Box",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Heart_of_Darkness",
+    "CurrencyType": "ECurrencyType::ApokolipsArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Kryptonite_Ring",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Kryptonite_Spear",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "FlashingBlade",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "AstroHarness",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Kryptonite_Knife",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Kryptonite_Gloves",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Kryptonite_Bullets",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "BetaClub",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "MetallosPowerSource",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "LexCorpWarsuit",
+    "CurrencyType": "ECurrencyType::KryptoniteArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Ace_Of_Winchesters",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Book_Of_Souls",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Candle_Of_Neron",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Chakra",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Crown_Of_Horns",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Philosophers_Stone",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Rings_Of_Azar",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Sword_Of_Salvation",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Sword_Of_Sin",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Trigons_Power_Staff",
+    "CurrencyType": "ECurrencyType::ChaosArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "God_Killer",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Ikon_Suit",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Promethium_Sword",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Speedforce_Battery",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Energy_Lance",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Legacy_Helmet",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Promethium_Knife",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Promethium_Grenades",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Rocket_Boots",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Promethium_Nunchucks",
+    "CurrencyType": "ECurrencyType::PromethiumArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Black_Kryptonite",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Chain_Batarang",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Crime_Alley_Gun",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Dark_Metal_Cards",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Hand_of_Zatanna",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Jokerized_Batarangs",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Jokerized_Venom",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Rib_Tickle",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Sharp_Tongue",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Thanagarian_Mace",
+    "CurrencyType": "ECurrencyType::DarkMetalArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Cryogenic_Handheld",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Cryo_Battery",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Cryo_Engine",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Cure_Serum",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Freeze_Grenade",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "High-Tech_Red_Goggles",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Noras_Snow_Globe",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Polar_Slippers",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Robotic_Spider",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "Thermal_Gloves",
+    "CurrencyType": "ECurrencyType::CryoArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Zatannas_Puppet",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Soul_Crystal",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_The_Book_Of_Zatara",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Magic_Wand",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Magicians_Cape",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_The_Talisman_Of_Atlantis",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Zatannas_Junior_Magic_Kit",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Boutonniere",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Magic_Ball",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Illusionist_Cards",
+    "CurrencyType": "ECurrencyType::ArcaneArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Amulet_of_Hatshepsut",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Crown_of_Khandaq_Ruler",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Orb_of_Ra",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Amulet_of_Anubis",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Khandaq_Royal_Cape",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Statues_of_the_Gods",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Little_Pyramid",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Clockwerk_Camel",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Ankh",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Bastet_Mask",
+    "CurrencyType": "ECurrencyType::NthArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Sharp_Scythe",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Trinity_Rings",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Anti-Living_Seeds",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Harleys_Mallet",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Neron_Knife",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Particle_Accelerator",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Atez_Beam",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Mortal_Coil",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Sound_of_the_Robin_King",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Toxic_Bomb",
+    "CurrencyType": "ECurrencyType::TwistedArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Moonblade",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Twin_Blade",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Spear_of_Destiny",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Protecting_Necklace",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Pandoras_Box",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Grimorium_Verum",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Soul_Token",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Guide_Needle",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Infernal_Guitar",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Frankincense_Lamp",
+    "CurrencyType": "ECurrencyType::InfernalArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Kamidogu_dagger",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Amulet_of_Shinnok",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Tao_Te_Zhan",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Gemstone",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Scorpions_Claws",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Muramasa_Blades",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Demons_Heart",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Scorpions_Sting",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Secret_Scrolls_of_Shirai_Ryu",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Soul_Stone",
+    "CurrencyType": "ECurrencyType::NetherrealmArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_CosmicTreadmill",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "S_Flash_Ring",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     12000,
+     16000,
+     20000,
+     26000,
+     34000,
+     45000,
+     58000,
+     75000,
+     98000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Phantom_Zone_Projector",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Miracle_Machine",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Harpoon_Hand",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "A_Lasso_Of_Truth",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     8000,
+     10000,
+     14000,
+     18000,
+     23000,
+     30000,
+     39000,
+     50000,
+     65000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Utility_Belt",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Amulet_Of_Harmonia",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Sword_Of_Superman",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   },
+   {
+    "UniversalGearName": "B_Eternity_Book",
+    "CurrencyType": "ECurrencyType::SpeedForceArtifactFragment",
+    "RequiredCost": [
+     5000,
+     6500,
+     8500,
+     11000,
+     14500,
+     18500,
+     24000,
+     31500,
+     41000,
+     100
+    ]
+   }
+  ],
+  "maxPiecesOfGear": 2500
+ }
+}
