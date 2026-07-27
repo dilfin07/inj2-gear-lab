@@ -1243,6 +1243,14 @@ function writeHash() {
     const on = Object.keys(state.artOn).filter(i => state.artOn[i]).join('-');
     p.set('a', `${state.artifact}.${state.artLevel}.${on}`);
   }
+  // optimiser settings travel with the build, so pressing "Подогнать" on a shared
+  // link reproduces what the sender actually did
+  const obj = document.getElementById('objective');
+  const optTal = document.getElementById('optTalents');
+  if (obj) p.set('o', obj.value);
+  if (optTal) p.set('ot', optTal.checked ? '1' : '0');
+  const rar = document.getElementById('gearRarity');
+  if (rar) p.set('r', rar.value);
   history.replaceState(null, '', '#' + p.toString());
 }
 
@@ -1258,6 +1266,9 @@ function readHash() {
     const [t, leg] = p.get('t').split('|');
     state.talents = t.split('~'); state.legendary = leg || '';
   }
+  if (p.get('o')) state.objective = p.get('o');
+  if (p.get('ot')) state.optTalents = p.get('ot') === '1';
+  if (p.get('r')) state.gearRarity = p.get('r');
   if (p.get('a')) {
     const [key, lvl, on] = p.get('a').split('.');
     if (D.artifacts[key]) {
@@ -1313,6 +1324,15 @@ function init() {
 
   const rar = document.getElementById('gearRarity');
   if (rar) rar.addEventListener('change', update);
+
+  if (state.objective) document.getElementById('objective').value = state.objective;
+  if (state.optTalents != null) document.getElementById('optTalents').checked = state.optTalents;
+  if (state.gearRarity) {
+    const r = document.getElementById('gearRarity');
+    if (r) r.value = state.gearRarity;
+  }
+  document.getElementById('objective').addEventListener('change', writeHash);
+  document.getElementById('optTalents').addEventListener('change', writeHash);
 
   document.getElementById('optimize').addEventListener('click', optimise);
   document.getElementById('clearMods').addEventListener('click', () => {
