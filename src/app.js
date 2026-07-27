@@ -192,8 +192,15 @@ function threatOf(r) {
   const defense = Math.floor((1 - t.Defense) * 10000 + 0.5) / 10000;
   const ehp = t.Health * w.HealthWeight / (defense + 1e-5);
   const resist = t.Health * ((t.CritResist || 0) * w.CritChanceResistanceWeight
-    + (t.StunResist || 0) * w.StunChanceResistanceWeight);
-  return Math.floor([offence, ehp, resist].reduce((a, x) => a + Math.floor(x + 0.5), 0) + 0.5);
+    + (t.StunResist || 0) * w.StunChanceResistanceWeight
+    + (t.DOTResist || 0) * w.DOTChanceResistanceWeight
+    + (t.BlockMitigation || 0) * w.BlockMitigationWeight);
+  // each term is rounded on its own, then the character's traits multiplier applies
+  const sum = [offence, ehp, resist].reduce((a, x) => a + Math.floor(x + 0.5), 0);
+  const traits = r.ch.threatTraits || 1;
+  const scalars = w.StarRatingScalars || [];
+  const starScalar = scalars[state.star - 1] ?? 1;
+  return Math.floor(sum * traits * starScalar + 0.5);
 }
 
 const damageOf = r => r.total.Attack
