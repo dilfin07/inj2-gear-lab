@@ -279,6 +279,14 @@ function renderHero(r) {
   const tier = TIER_COLOR[ch.tier] || 'var(--line)';
   const p = document.getElementById('portrait');
   p.style.setProperty('--tier', tier);
+  // the game swaps in an ornate frame from six stars up
+  p.classList.toggle('sixstar', state.star >= 6);
+  const six = state.star >= 6;
+  const shape = six ? ICONS.card_shape6 : ICONS.card_shape;
+  const bevel = six ? ICONS.card_bevel6 : ICONS.card_bevel;
+  if (shape) p.style.setProperty('--shape', `url(${shape})`);
+  if (bevel) p.style.setProperty('--bevel', `url(${bevel})`);
+  if (ICONS.card_ornament) p.style.setProperty('--ornament', `url(${ICONS.card_ornament})`);
   const artBox = document.getElementById('portraitArt');
   artBox.style.backgroundImage = art ? `url(${art})` : 'none';
   artBox.textContent = art ? '' : ch.k.replace(/_/g, ' ').split(' ').map(w => w[0]).join('').slice(0, 3);

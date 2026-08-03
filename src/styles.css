@@ -112,16 +112,31 @@
   .hero { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
   .portrait {
     width: 100%; max-width: 212px; aspect-ratio: 1; position: relative;
-    /* clipped top-left and bottom-right corners */
-    clip-path: polygon(0 16px, 16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%);
+    /* silhouette comes from the game's own card mask, so bevel and ornament line up */
+    -webkit-mask-image: var(--shape); mask-image: var(--shape);
+    -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
     background: #0b1723 center/cover no-repeat;
     padding: 3px;
-    box-shadow: 0 0 0 1px rgba(255,255,255,.06) inset, 0 8px 32px -10px #000;
   }
   .portrait::before {
     content: ''; position: absolute; inset: 0; z-index: -1;
     background: linear-gradient(150deg, var(--tier, #46617e), rgba(255,255,255,.32) 35%, var(--tier, #46617e) 70%);
-    clip-path: inherit;
+  }
+  /* the card's own bevel and ornament, taken from the game's packed masks and tinted here */
+  .portrait::after {
+    content: ''; position: absolute; inset: 0; z-index: 3; pointer-events: none;
+    background: linear-gradient(150deg, rgba(255,255,255,.85), rgba(190,210,230,.35) 45%, rgba(255,255,255,.7));
+    -webkit-mask-image: var(--bevel); mask-image: var(--bevel);
+    -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+    opacity: .5;
+  }
+  .portrait.sixstar::after {
+    background: linear-gradient(150deg, var(--tier), #fff 45%, var(--tier));
+    -webkit-mask-image: var(--ornament); mask-image: var(--ornament);
+    opacity: .95;
+    filter: drop-shadow(0 0 6px var(--tier));
   }
   .portrait .art {
     position: absolute; inset: 3px;
@@ -130,19 +145,21 @@
     display: flex; align-items: center; justify-content: center;
     font-family: var(--display); font-size: 34px; letter-spacing: .1em;
     color: rgba(226,236,246,.22);
-    clip-path: polygon(0 14px, 14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
+    -webkit-mask-image: var(--shape); mask-image: var(--shape);
+    -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
   }
   .portrait .lvl {
-    position: absolute; top: 6px; left: 10px; z-index: 2;
+    position: absolute; top: 16px; left: 17px; z-index: 4;
     font-family: var(--mono); font-size: 15px; font-weight: 600; text-shadow: 0 1px 5px #000;
   }
   .portrait .cls {
-    position: absolute; top: 7px; right: 10px; z-index: 2;
+    position: absolute; top: 17px; right: 16px; z-index: 4;
     font-family: var(--display); font-size: 10px; letter-spacing: .12em;
     text-transform: uppercase; color: var(--tier); text-shadow: 0 1px 5px #000;
   }
   .stars {
-    position: absolute; left: 7px; top: 26px; bottom: 8px; z-index: 2;
+    position: absolute; left: 12px; top: 38px; bottom: 18px; z-index: 4;
     display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; gap: 1px;
   }
   .hero h2 {
