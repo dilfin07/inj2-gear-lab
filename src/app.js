@@ -394,19 +394,12 @@ function renderSets(r) {
   box.append(el('div', 'note', `Надето частей: ${r.pieces}/5`));
 }
 
-/** the game frames a talent with a rarity badge and puts the stat pictogram inside */
+/** rarity badge, kept clean — the game shows the stat pictogram beside the text, not on it */
 function talentBadge(talent, legendary) {
   const wrap = el('div', 'badge');
   const rarity = !talent || !talent.id ? 'None' : legendary ? 'Legendary' : 'Epic';
   const frame = ICONS['talent_' + rarity];
   if (frame) wrap.style.backgroundImage = `url(${frame})`;
-  if (talent && talent.stat && ICONS[talent.stat]) {
-    const sym = document.createElement('img');
-    sym.className = 'sym';
-    sym.src = ICONS[talent.stat];
-    sym.alt = '';
-    wrap.append(sym);
-  }
   return wrap;
 }
 
@@ -417,8 +410,17 @@ function renderTalents() {
     const leg = i === 7;
     const cur = leg ? state.legendary : state.talents[i];
     const list = leg ? TALENTS_LEG : TALENTS;
+    const talent = list.find(t => t.id === cur);
     const row = el('div', 'talent' + (leg ? ' legendary' : '') + (cur ? ' filled' : ''));
-    row.append(talentBadge(list.find(t => t.id === cur), leg));
+    row.append(talentBadge(talent, leg));
+    const sym = el('span', 'sym');
+    if (talent && talent.stat && ICONS[talent.stat]) {
+      const im = document.createElement('img');
+      im.src = ICONS[talent.stat];
+      im.alt = '';
+      sym.append(im);
+    }
+    row.append(sym);
     const sel = el('select');
     for (const t of (leg ? TALENTS_LEG : TALENTS)) sel.append(new Option(t.name, t.id));
     sel.value = cur;

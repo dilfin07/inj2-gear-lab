@@ -237,18 +237,19 @@
 
   /* ---------- talents ---------- */
   .talent-list { display: flex; flex-direction: column; gap: 3px; }
-  .talent { display: grid; grid-template-columns: 22px 1fr; gap: 7px; align-items: center; }
+  .talent {
+    display: grid; grid-template-columns: 22px 14px 1fr; gap: 6px; align-items: center;
+    background: rgba(9, 18, 29, .34); padding: 2px 5px 2px 3px;
+    clip-path: polygon(6px 0, 100% 0, 100% calc(100% - 6px), calc(100% - 6px) 100%, 0 100%, 0 6px);
+  }
   .badge {
-    width: 22px; height: 24px; position: relative;
+    width: 22px; height: 24px;
     background: center/contain no-repeat;
-    display: flex; align-items: center; justify-content: center;
-    opacity: .55; transition: opacity .12s;
+    opacity: .5; transition: opacity .12s;
   }
   .talent.filled .badge { opacity: 1; }
-  .badge .sym {
-    width: 11px; height: 11px; object-fit: contain;
-    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .9));
-  }
+  .talent .sym { display: flex; align-items: center; justify-content: center; }
+  .talent .sym img { width: 13px; height: 13px; object-fit: contain; opacity: .8; }
   .talent select {
     width: 100%; font-size: 12px; padding: 3px 5px;
     background: transparent; border: 1px solid transparent; color: var(--muted-2);
@@ -933,19 +934,12 @@ function renderSets(r) {
   box.append(el('div', 'note', `Надето частей: ${r.pieces}/5`));
 }
 
-/** the game frames a talent with a rarity badge and puts the stat pictogram inside */
+/** rarity badge, kept clean — the game shows the stat pictogram beside the text, not on it */
 function talentBadge(talent, legendary) {
   const wrap = el('div', 'badge');
   const rarity = !talent || !talent.id ? 'None' : legendary ? 'Legendary' : 'Epic';
   const frame = ICONS['talent_' + rarity];
   if (frame) wrap.style.backgroundImage = `url(${frame})`;
-  if (talent && talent.stat && ICONS[talent.stat]) {
-    const sym = document.createElement('img');
-    sym.className = 'sym';
-    sym.src = ICONS[talent.stat];
-    sym.alt = '';
-    wrap.append(sym);
-  }
   return wrap;
 }
 
@@ -956,8 +950,17 @@ function renderTalents() {
     const leg = i === 7;
     const cur = leg ? state.legendary : state.talents[i];
     const list = leg ? TALENTS_LEG : TALENTS;
+    const talent = list.find(t => t.id === cur);
     const row = el('div', 'talent' + (leg ? ' legendary' : '') + (cur ? ' filled' : ''));
-    row.append(talentBadge(list.find(t => t.id === cur), leg));
+    row.append(talentBadge(talent, leg));
+    const sym = el('span', 'sym');
+    if (talent && talent.stat && ICONS[talent.stat]) {
+      const im = document.createElement('img');
+      im.src = ICONS[talent.stat];
+      im.alt = '';
+      sym.append(im);
+    }
+    row.append(sym);
     const sel = el('select');
     for (const t of (leg ? TALENTS_LEG : TALENTS)) sel.append(new Option(t.name, t.id));
     sel.value = cur;
