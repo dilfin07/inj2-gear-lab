@@ -280,13 +280,18 @@
   .slot {
     --hex: polygon(0 9%, 50% 0, 100% 9%, 100% 91%, 50% 100%, 0 91%);
     clip-path: var(--hex);
-    background: linear-gradient(165deg, rgba(198, 166, 255, .55), rgba(74, 214, 189, .34) 60%, rgba(198, 166, 255, .42));
-    padding: 1.5px;
+    /* brushed-metal bevel like the in-game frame: lit from the top-left */
+    background: linear-gradient(158deg,
+      #d4e2f0 0%, #8399ad 14%, #46586c 38%, #2b3a4b 62%, #6f8598 86%, #c2d4e5 100%);
+    padding: 2px;
+    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, .5));
   }
   .slot .inner {
     position: relative; isolation: isolate;
     clip-path: var(--hex);
-    background: linear-gradient(180deg, rgba(34, 24, 60, .40), rgba(9, 17, 29, .52));
+    background:
+      linear-gradient(180deg, rgba(150, 180, 210, .16), transparent 22%),
+      linear-gradient(180deg, rgba(18, 28, 44, .62), rgba(7, 14, 24, .78));
     padding: 20px 8px 18px;
     display: flex; flex-direction: column; gap: 3px; min-height: 214px;
   }
