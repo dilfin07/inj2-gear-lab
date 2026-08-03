@@ -407,6 +407,33 @@ function renderDerived(r) {
   }
 }
 
+/** the same hit, resolved against each opponent class through the class matrix */
+function renderDamageByClass(r) {
+  const box = document.getElementById('dmgByClass');
+  if (!box) return;
+  box.textContent = '';
+  const base = damageOf(r);
+  const idx = CLASS_INDEX.indexOf(r.ch.cls);
+  const row = idx >= 0 ? (D.classMatrix || [])[idx] : null;
+
+  const lines = [['Обычный', 0]];
+  if (row) {
+    for (const [key, value] of Object.entries(row)) {
+      const m = key.match(/\[(\d+)\]$/);
+      const against = CLASS_INDEX[m ? +m[1] : 0];
+      if (against && value) lines.push(['против: ' + (CLASS_RU[against] || against), value]);
+    }
+  }
+  lines.sort((a, b) => b[1] - a[1]);
+
+  for (const [name, mod] of lines) {
+    const line = el('div', 'derived-row' + (mod > 0 ? ' up' : mod < 0 ? ' down' : ''));
+    line.append(el('span', 'who', name));
+    line.append(el('span', 'val', fmt(base * (1 + mod))));
+    box.append(line);
+  }
+}
+
 /** who this character hits harder, and who hits them harder — from the game's class matrix */
 function renderMatchups(ch) {
   const box = document.getElementById('matchups');
@@ -749,6 +776,7 @@ function update() {
   renderHero(r);
   renderStats(r);
   renderDerived(r);
+  renderDamageByClass(r);
   renderMatchups(r.ch);
   renderGear(r);
   renderSets(r);

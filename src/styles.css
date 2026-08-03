@@ -257,6 +257,9 @@
     font-family: var(--mono); font-variant-numeric: tabular-nums;
     font-size: 15px; font-weight: 600; color: var(--cyan);
   }
+  .derived-row.up .val { color: #6ff0b4; }
+  .derived-row.down .val { color: var(--red); }
+  .derived-row .who { text-transform: none; letter-spacing: .04em; font-size: 11px; }
 
   .matchups { margin-top: auto; }
   .matchup {
