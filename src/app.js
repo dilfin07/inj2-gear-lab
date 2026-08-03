@@ -31,13 +31,6 @@ const STAT_RU = {
   DOTResist: 'Стойкость к длит. урону', BlockMitigation: 'Блокирование',
   PowerGen: 'Выработка силы', PowerGeneration: 'Выработка силы', Healing: 'Лечение',
 };
-const STAT_ICON = {
-  Attack: 'i-attack', Health: 'i-health', CritDamage: 'i-crit',
-  CriticalHitChance: 'i-dice', LethalAttackChance: 'i-skull', FastAttackChance: 'i-bolt',
-  ArmorPierceChance: 'i-pierce', Defense: 'i-shield', CritResist: 'i-shield',
-  StunResist: 'i-shield', DOTResist: 'i-shield', BlockMitigation: 'i-shield',
-  PowerGen: 'i-bolt', PowerGeneration: 'i-bolt', Healing: 'i-health',
-};
 // compact stat names for the gear cards, where the column is only ~150px wide
 const STAT_SHORT = {
   Attack: 'Атака', Health: 'Здоровье', Defense: 'Защита',
@@ -407,23 +400,27 @@ function renderDerived(r) {
   }
 }
 
+/** [[opponentClass, modifier]] for a class, strongest bonus first; empty when neutral */
+function classMatchups(cls) {
+  const row = (D.classMatrix || [])[CLASS_INDEX.indexOf(cls)];
+  if (!row) return [];
+  return Object.entries(row)
+    .map(([key, value]) => {
+      const m = key.match(/\[(\d+)\]$/);
+      return [CLASS_INDEX[m ? +m[1] : 0], value];
+    })
+    .filter(([against, value]) => against && value)
+    .sort((a, b) => b[1] - a[1]);
+}
+
 /** the same hit, resolved against each opponent class through the class matrix */
 function renderDamageByClass(r) {
   const box = document.getElementById('dmgByClass');
   if (!box) return;
   box.textContent = '';
   const base = damageOf(r);
-  const idx = CLASS_INDEX.indexOf(r.ch.cls);
-  const row = idx >= 0 ? (D.classMatrix || [])[idx] : null;
-
-  const lines = [['Обычный', 0]];
-  if (row) {
-    for (const [key, value] of Object.entries(row)) {
-      const m = key.match(/\[(\d+)\]$/);
-      const against = CLASS_INDEX[m ? +m[1] : 0];
-      if (against && value) lines.push(['против: ' + (CLASS_RU[against] || against), value]);
-    }
-  }
+  const lines = [['Обычный', 0], ...classMatchups(r.ch.cls)
+    .map(([against, mod]) => ['против: ' + (CLASS_RU[against] || against), mod])];
   lines.sort((a, b) => b[1] - a[1]);
 
   for (const [name, mod] of lines) {
@@ -439,19 +436,11 @@ function renderMatchups(ch) {
   const box = document.getElementById('matchups');
   if (!box) return;
   box.textContent = '';
-  const idx = CLASS_INDEX.indexOf(ch.cls);
-  const row = idx >= 0 ? (D.classMatrix || [])[idx] : null;
-  if (!row) {
+  const entries = classMatchups(ch.cls);
+  if (!entries.length) {
     box.append(el('div', 'note', 'нейтральный класс — без бонусов и штрафов'));
     return;
   }
-  const entries = [];
-  for (const [key, value] of Object.entries(row)) {
-    const m = key.match(/\[(\d+)\]$/);
-    const against = CLASS_INDEX[m ? +m[1] : 0];
-    if (against && value) entries.push([against, value]);
-  }
-  entries.sort((a, b) => b[1] - a[1]);
   for (const [against, value] of entries) {
     const line = el('div', 'matchup' + (value > 0 ? ' up' : ' down'));
     const ico = ICONS['class_' + against];
