@@ -83,10 +83,10 @@
     content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 6;
     clip-path: var(--cut);
     background:
-      linear-gradient(45deg, transparent 5.5px, rgba(170, 215, 240, .85) 5.5px,
-                      rgba(170, 215, 240, .85) 8.5px, transparent 8.5px) top left / 30px 30px no-repeat,
-      linear-gradient(225deg, transparent 5.5px, rgba(120, 210, 200, .7) 5.5px,
-                      rgba(120, 210, 200, .7) 8.5px, transparent 8.5px) bottom right / 30px 30px no-repeat;
+      linear-gradient(135deg, transparent 7px, rgba(170, 215, 240, .85) 7px,
+                      rgba(170, 215, 240, .85) 10px, transparent 10px) top left / 26px 26px no-repeat,
+      linear-gradient(315deg, transparent 7px, rgba(120, 210, 200, .7) 7px,
+                      rgba(120, 210, 200, .7) 10px, transparent 10px) bottom right / 26px 26px no-repeat;
   }
   .label {
     font-family: var(--display); text-transform: uppercase; letter-spacing: .18em;
