@@ -65,21 +65,21 @@ const CAPS = {
 // Talent values as the game hands them out.
 const TALENTS = [
   { id: '', name: '— пусто —', stat: null, val: 0 },
-  { id: 'crit12', name: 'Шанс крит. атаки +12 %', stat: 'CriticalHitChance', val: 0.12 },
-  { id: 'critdmg24', name: 'Урон от крит. атаки +24 %', stat: 'CritDamage', val: 0.24 },
-  { id: 'lethal12', name: 'Шанс смерт. атаки +12 %', stat: 'LethalAttackChance', val: 0.12 },
-  { id: 'fast12', name: 'Шанс быстрой атаки +12 %', stat: 'FastAttackChance', val: 0.12 },
-  { id: 'def12', name: 'К защите +12 %', stat: 'Defense', val: 0.12 },
-  { id: 'pierce24', name: 'Пробить броню 24 %', stat: 'ArmorPierceChance', val: 0.24 },
-  { id: 'critres12', name: 'Стойкость к криту +12 %', stat: 'CritResist', val: 0.12 },
-  { id: 'atk4', name: 'К атаке +4 %', stat: 'Attack', val: 0.04, pct: true },
+  { id: 'crit12', name: 'Крит. шанс +12 %', stat: 'CriticalHitChance', val: 0.12 },
+  { id: 'critdmg24', name: 'Крит. урон +24 %', stat: 'CritDamage', val: 0.24 },
+  { id: 'lethal12', name: 'Смерт. атака +12 %', stat: 'LethalAttackChance', val: 0.12 },
+  { id: 'fast12', name: 'Быстрая атака +12 %', stat: 'FastAttackChance', val: 0.12 },
+  { id: 'def12', name: 'Защита +12 %', stat: 'Defense', val: 0.12 },
+  { id: 'pierce24', name: 'Пробой брони 24 %', stat: 'ArmorPierceChance', val: 0.24 },
+  { id: 'critres12', name: 'Стойк. к криту +12 %', stat: 'CritResist', val: 0.12 },
+  { id: 'atk4', name: 'Атака +4 %', stat: 'Attack', val: 0.04, pct: true },
 ];
 const TALENTS_LEG = [
   { id: '', name: '— пусто —', stat: null, val: 0 },
-  { id: 'pierce50', name: 'Пробить броню 50 %', stat: 'ArmorPierceChance', val: 0.50 },
-  { id: 'atk10', name: 'К атаке +10 %', stat: 'Attack', val: 0.10, pct: true },
-  { id: 'hp10', name: 'К здоровью +10 %', stat: 'Health', val: 0.10, pct: true },
-  { id: 'def20', name: 'К защите +20 %', stat: 'Defense', val: 0.20 },
+  { id: 'pierce50', name: 'Пробой брони 50 %', stat: 'ArmorPierceChance', val: 0.50 },
+  { id: 'atk10', name: 'Атака +10 %', stat: 'Attack', val: 0.10, pct: true },
+  { id: 'hp10', name: 'Здоровье +10 %', stat: 'Health', val: 0.10, pct: true },
+  { id: 'def20', name: 'Защита +20 %', stat: 'Defense', val: 0.20 },
 ];
 
 const state = {
@@ -394,14 +394,31 @@ function renderSets(r) {
   box.append(el('div', 'note', `Надето частей: ${r.pieces}/5`));
 }
 
+/** the game frames a talent with a rarity badge and puts the stat pictogram inside */
+function talentBadge(talent, legendary) {
+  const wrap = el('div', 'badge');
+  const rarity = !talent || !talent.id ? 'None' : legendary ? 'Legendary' : 'Epic';
+  const frame = ICONS['talent_' + rarity];
+  if (frame) wrap.style.backgroundImage = `url(${frame})`;
+  if (talent && talent.stat && ICONS[talent.stat]) {
+    const sym = document.createElement('img');
+    sym.className = 'sym';
+    sym.src = ICONS[talent.stat];
+    sym.alt = '';
+    wrap.append(sym);
+  }
+  return wrap;
+}
+
 function renderTalents() {
   const box = document.getElementById('talents');
   box.textContent = '';
   for (let i = 0; i < 8; i++) {
     const leg = i === 7;
     const cur = leg ? state.legendary : state.talents[i];
+    const list = leg ? TALENTS_LEG : TALENTS;
     const row = el('div', 'talent' + (leg ? ' legendary' : '') + (cur ? ' filled' : ''));
-    row.append(el('div', 'hex'));
+    row.append(talentBadge(list.find(t => t.id === cur), leg));
     const sel = el('select');
     for (const t of (leg ? TALENTS_LEG : TALENTS)) sel.append(new Option(t.name, t.id));
     sel.value = cur;

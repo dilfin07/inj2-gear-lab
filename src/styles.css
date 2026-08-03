@@ -218,13 +218,18 @@
 
   /* ---------- talents ---------- */
   .talent-list { display: flex; flex-direction: column; gap: 3px; }
-  .talent { display: grid; grid-template-columns: 15px 1fr; gap: 6px; align-items: center; }
-  .hex {
-    width: 15px; height: 17px; background: #2c3e52;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  .talent { display: grid; grid-template-columns: 22px 1fr; gap: 7px; align-items: center; }
+  .badge {
+    width: 22px; height: 24px; position: relative;
+    background: center/contain no-repeat;
+    display: flex; align-items: center; justify-content: center;
+    opacity: .55; transition: opacity .12s;
   }
-  .talent.filled .hex { background: linear-gradient(180deg, #57e39a, #23a86d); }
-  .talent.legendary .hex { background: linear-gradient(180deg, #cfa2ff, #8b4fe0); }
+  .talent.filled .badge { opacity: 1; }
+  .badge .sym {
+    width: 11px; height: 11px; object-fit: contain;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .9));
+  }
   .talent select {
     width: 100%; font-size: 12px; padding: 3px 5px;
     background: transparent; border: 1px solid transparent; color: var(--muted-2);
