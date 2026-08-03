@@ -123,15 +123,8 @@
     background: linear-gradient(150deg, var(--tier, #46617e), rgba(255,255,255,.32) 35%, var(--tier, #46617e) 70%);
     clip-path: inherit;
   }
-  /* the cut-out art blurred behind itself, standing in for the game's lit backdrop */
-  .portrait .scene {
-    position: absolute; inset: 3px; z-index: 0;
-    background: center 30%/165% no-repeat;
-    filter: blur(11px) saturate(1.5) brightness(.62);
-    clip-path: polygon(0 14px, 14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
-  }
   .portrait .art {
-    position: absolute; inset: 3px; z-index: 1;
+    position: absolute; inset: 3px;
     background: radial-gradient(120% 90% at 50% 0%, rgba(255,255,255,.10), transparent 60%), #0b1723;
     background-size: cover; background-position: center; background-repeat: no-repeat;
     display: flex; align-items: center; justify-content: center;

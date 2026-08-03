@@ -281,8 +281,6 @@ function renderHero(r) {
   p.style.setProperty('--tier', tier);
   const artBox = document.getElementById('portraitArt');
   artBox.style.backgroundImage = art ? `url(${art})` : 'none';
-  const scene = document.getElementById('portraitScene');
-  if (scene) scene.style.backgroundImage = art ? `url(${art})` : 'none';
   artBox.textContent = art ? '' : ch.k.replace(/_/g, ' ').split(' ').map(w => w[0]).join('').slice(0, 3);
   document.getElementById('bg').style.backgroundImage = art ? `url(${art})` : 'none';
   document.getElementById('pLevel').textContent = state.level;
