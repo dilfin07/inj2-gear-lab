@@ -56,11 +56,37 @@
 
   /* ---------- shared chrome ---------- */
   .panel {
+    --cut: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    position: relative;
     background: var(--panel);
-    border: 1px solid var(--line-soft);
     backdrop-filter: blur(10px) saturate(1.1);
-    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    clip-path: var(--cut);
     padding: var(--s3);
+  }
+  /* a 1px lit edge that follows every side, chamfers included */
+  .panel::before {
+    content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 5;
+    clip-path: var(--cut);
+    background: linear-gradient(145deg,
+      rgba(150, 200, 230, .55) 0%,
+      rgba(96, 140, 184, .22) 38%,
+      rgba(74, 214, 189, .30) 72%,
+      rgba(150, 200, 230, .45) 100%);
+    padding: 1px;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+  }
+  /* the game accents the chamfers with a thicker stroke than the straight edges */
+  .panel::after {
+    content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 6;
+    clip-path: var(--cut);
+    background:
+      linear-gradient(45deg, transparent 5.5px, rgba(170, 215, 240, .85) 5.5px,
+                      rgba(170, 215, 240, .85) 8.5px, transparent 8.5px) top left / 30px 30px no-repeat,
+      linear-gradient(225deg, transparent 5.5px, rgba(120, 210, 200, .7) 5.5px,
+                      rgba(120, 210, 200, .7) 8.5px, transparent 8.5px) bottom right / 30px 30px no-repeat;
   }
   .label {
     font-family: var(--display); text-transform: uppercase; letter-spacing: .18em;
