@@ -243,6 +243,21 @@
   /* anything above the cap is wasted — warm, not alarming */
   .stat .parts b.over { color: #e0954a; font-weight: 600; }
 
+  #derived { margin-top: 10px; }
+  .derived-row {
+    display: flex; justify-content: space-between; align-items: baseline; gap: var(--s2);
+    padding: 5px 6px; background: rgba(9, 18, 29, .34);
+  }
+  .derived-row + .derived-row { border-top: 1px solid var(--line-soft); }
+  .derived-row .who {
+    font-family: var(--display); text-transform: uppercase; letter-spacing: .1em;
+    font-size: 10px; color: var(--muted);
+  }
+  .derived-row .val {
+    font-family: var(--mono); font-variant-numeric: tabular-nums;
+    font-size: 15px; font-weight: 600; color: var(--cyan);
+  }
+
   .matchups { margin-top: auto; }
   .matchup {
     display: grid; grid-template-columns: 18px 1fr auto; gap: var(--s2); align-items: center;

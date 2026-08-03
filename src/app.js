@@ -378,6 +378,35 @@ function renderGear(r) {
   }
 }
 
+/** numbers that follow from the stats but are not stats themselves */
+function renderDerived(r) {
+  const box = document.getElementById('derived');
+  if (!box) return;
+  box.textContent = '';
+  const rows = [];
+
+  // what the defence percentage actually buys you
+  rows.push(['Эффективное HP', fmt(ehpOf(r)),
+             'здоровье с учётом защиты — столько урона нужно, чтобы вас убить']);
+
+  // how finished the build is
+  let used = 0, open = 0;
+  for (const slot of SLOTS) {
+    const unlocked = modSlotsUnlocked(state.gearLevel[slot]);
+    open += unlocked;
+    used += state.mods[slot].slice(0, unlocked).filter(Boolean).length;
+  }
+  rows.push(['Моды', `${used} / ${open}`, 'занято слотов из открытых']);
+
+  for (const [name, value, hint] of rows) {
+    const line = el('div', 'derived-row');
+    line.title = hint;
+    line.append(el('span', 'who', name));
+    line.append(el('span', 'val', value));
+    box.append(line);
+  }
+}
+
 /** who this character hits harder, and who hits them harder — from the game's class matrix */
 function renderMatchups(ch) {
   const box = document.getElementById('matchups');
@@ -719,6 +748,7 @@ function update() {
   const r = compute();
   renderHero(r);
   renderStats(r);
+  renderDerived(r);
   renderMatchups(r.ch);
   renderGear(r);
   renderSets(r);
