@@ -129,7 +129,7 @@
   .stage {
     display: grid;
     grid-template-columns: 214px minmax(230px, .84fr) minmax(348px, 1.2fr);
-    gap: var(--s3); align-items: start;
+    gap: var(--s3); align-items: stretch;
   }
   @media (max-width: 1080px) { .stage { grid-template-columns: 1fr 1fr; } .stage .hero { order: -1; } }
   @media (max-width: 720px)  { .stage { grid-template-columns: 1fr; } }
@@ -203,6 +203,7 @@
   .stat-cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3); }
   @media (max-width: 560px) { .stat-cols { grid-template-columns: 1fr; } }
   .stat-col { display: flex; flex-direction: column; gap: 1px; }
+  .stat-cols { height: 100%; }
   .stat-col > .label { margin-bottom: 3px; }
   .stat {
     display: grid; grid-template-columns: 20px minmax(0, 1fr) auto;
@@ -241,6 +242,18 @@
   .stat .val small { font-family: var(--display); font-size: 9px; letter-spacing: .08em; color: var(--red); }
   /* anything above the cap is wasted — warm, not alarming */
   .stat .parts b.over { color: #e0954a; font-weight: 600; }
+
+  .matchups { margin-top: auto; }
+  .matchup {
+    display: grid; grid-template-columns: 18px 1fr auto; gap: var(--s2); align-items: center;
+    padding: 4px 6px; background: rgba(9, 18, 29, .34); font-size: 12px;
+  }
+  .matchup + .matchup { border-top: 1px solid var(--line-soft); }
+  .matchup img { width: 16px; height: 16px; object-fit: contain; opacity: .85; }
+  .matchup .who { color: var(--muted); }
+  .matchup .val { font-family: var(--mono); font-weight: 600; }
+  .matchup.up .val { color: var(--cyan); }
+  .matchup.down .val { color: var(--red); }
 
   /* ---------- talents ---------- */
   .talent-list { display: flex; flex-direction: column; gap: 3px; }

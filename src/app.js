@@ -47,6 +47,9 @@ const STAT_SHORT = {
   CritResist: 'Стойк. к криту', StunResist: 'Стойк. к оглуш.',
 };
 
+const CLASS_INDEX = ['Agility', 'Magic', 'MetaHuman', 'Might', 'Tech'];
+const CLASS_RU = { Agility: 'Ловкость', Magic: 'Магия', MetaHuman: 'Мета', Might: 'Мощь', Tech: 'Технологии' };
+
 const TIER_COLOR = {
   Silver: '#b9c8d6', Gold: '#f2b937', Legendary: '#b184ee',
   Platinum: '#7fd8ff', Diamond: '#6ff2e0', Unobtainium: '#ff7ad9', Boss: '#e8604a',
@@ -375,6 +378,38 @@ function renderGear(r) {
   }
 }
 
+/** who this character hits harder, and who hits them harder — from the game's class matrix */
+function renderMatchups(ch) {
+  const box = document.getElementById('matchups');
+  if (!box) return;
+  box.textContent = '';
+  const idx = CLASS_INDEX.indexOf(ch.cls);
+  const row = idx >= 0 ? (D.classMatrix || [])[idx] : null;
+  if (!row) {
+    box.append(el('div', 'note', 'нейтральный класс — без бонусов и штрафов'));
+    return;
+  }
+  const entries = [];
+  for (const [key, value] of Object.entries(row)) {
+    const m = key.match(/\[(\d+)\]$/);
+    const against = CLASS_INDEX[m ? +m[1] : 0];
+    if (against && value) entries.push([against, value]);
+  }
+  entries.sort((a, b) => b[1] - a[1]);
+  for (const [against, value] of entries) {
+    const line = el('div', 'matchup' + (value > 0 ? ' up' : ' down'));
+    const ico = ICONS['class_' + against];
+    if (ico) {
+      const im = document.createElement('img');
+      im.src = ico; im.alt = '';
+      line.append(im);
+    }
+    line.append(el('span', 'who', CLASS_RU[against] || against));
+    line.append(el('span', 'val', (value > 0 ? '+' : '') + Math.round(value * 100) + ' %'));
+    box.append(line);
+  }
+}
+
 function renderSets(r) {
   const box = document.getElementById('sets');
   box.textContent = '';
@@ -684,6 +719,7 @@ function update() {
   const r = compute();
   renderHero(r);
   renderStats(r);
+  renderMatchups(r.ch);
   renderGear(r);
   renderSets(r);
   renderArtifact();
