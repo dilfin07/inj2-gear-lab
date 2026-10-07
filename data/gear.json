@@ -6079,6 +6079,101 @@
   "combatData": null,
   "uiData": "/Game/UI/Assets/Gear/GreenLantern_B_01_torso_Data.GreenLantern_B_01_torso_Data"
  },
+ "GreenLantern_GG_Arms": {
+  "key": "GreenLantern_GG_Arms",
+  "path": "Gear/GreenLantern_GG_Arms",
+  "slot": "Arms",
+  "character": "GreenLantern_GG",
+  "universal": false,
+  "baseStatsKey": "GreenLantern_A_Arms",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "Attack",
+    "base": 10.0,
+    "perLevel": 5.0,
+    "text": "{val} Attack"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/GreenLantern_GG_01_Arms_Data.GreenLantern_GG_01_Arms_Data"
+ },
+ "GreenLantern_GG_Equipment": {
+  "key": "GreenLantern_GG_Equipment",
+  "path": "Gear/GreenLantern_GG_Equipment",
+  "slot": "Equipment",
+  "character": "GreenLantern_GG",
+  "universal": false,
+  "baseStatsKey": "GreenLantern_A_Equipment",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "CriticalHitChance",
+    "base": 0.032999999821186066,
+    "perLevel": 0.003000000026077032,
+    "text": "{val} Critical Attack chance"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/GreenLantern_GG_01_Equipment_Data.GreenLantern_GG_01_Equipment_Data"
+ },
+ "GreenLantern_GG_Head": {
+  "key": "GreenLantern_GG_Head",
+  "path": "Gear/GreenLantern_GG_Head",
+  "slot": "Head",
+  "character": "GreenLantern_GG",
+  "universal": false,
+  "baseStatsKey": "GreenLantern_A_Head",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "Defense",
+    "base": 0.032999999821186066,
+    "perLevel": 0.003000000026077032,
+    "text": "{val} Defense"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/GreenLantern_GG_01_Head_Data.GreenLantern_GG_01_Head_Data"
+ },
+ "GreenLantern_GG_Legs": {
+  "key": "GreenLantern_GG_Legs",
+  "path": "Gear/GreenLantern_GG_Legs",
+  "slot": "Legs",
+  "character": "GreenLantern_GG",
+  "universal": false,
+  "baseStatsKey": "GreenLantern_A_Legs",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "Health",
+    "base": 200.0,
+    "perLevel": 50.0,
+    "text": "{val} Health"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/GreenLantern_GG_01_Legs_Data.GreenLantern_GG_01_Legs_Data"
+ },
+ "GreenLantern_GG_Torso": {
+  "key": "GreenLantern_GG_Torso",
+  "path": "Gear/GreenLantern_GG_Torso",
+  "slot": "Torso",
+  "character": "GreenLantern_GG",
+  "universal": false,
+  "baseStatsKey": "GreenLantern_A_Torso",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "Health",
+    "base": 200.0,
+    "perLevel": 50.0,
+    "text": "{val} Health"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/GreenLantern_GG_01_Torso_Data.GreenLantern_GG_01_Torso_Data"
+ },
  "GreenLantern_JS_Arms": {
   "key": "GreenLantern_JS_Arms",
   "path": "Gear/GreenLantern_JS_Arms",
@@ -8265,6 +8360,101 @@
   "combatData": null,
   "uiData": "/Game/UI/Assets/Gear/Heroes/Shazam/GearData_Shazam_23_Torso.GearData_Shazam_23_Torso"
  },
+ "SolomonGrundy_A_Arms": {
+  "key": "SolomonGrundy_A_Arms",
+  "path": "Gear/SolomonGrundy_A_Arms",
+  "slot": "Arms",
+  "character": "SolomonGrundy_A",
+  "universal": false,
+  "baseStatsKey": "SolomonGrundy_A_Arms",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "Attack",
+    "base": 10.0,
+    "perLevel": 5.0,
+    "text": "{val} Attack"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/SolomonGrundy_A_01_Arms_Data.SolomonGrundy_A_01_Arms_Data"
+ },
+ "SolomonGrundy_A_Equipment": {
+  "key": "SolomonGrundy_A_Equipment",
+  "path": "Gear/SolomonGrundy_A_Equipment",
+  "slot": "Equipment",
+  "character": "SolomonGrundy_A",
+  "universal": false,
+  "baseStatsKey": "SolomonGrundy_A_Equipment",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "CriticalHitChance",
+    "base": 0.032999999821186066,
+    "perLevel": 0.003000000026077032,
+    "text": "{val} Critical Attack chance"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/SolomonGrundy_A_01_Equipment_Data.SolomonGrundy_A_01_Equipment_Data"
+ },
+ "SolomonGrundy_A_Head": {
+  "key": "SolomonGrundy_A_Head",
+  "path": "Gear/SolomonGrundy_A_Head",
+  "slot": "Head",
+  "character": "SolomonGrundy_A",
+  "universal": false,
+  "baseStatsKey": "SolomonGrundy_A_Head",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "Defense",
+    "base": 0.032999999821186066,
+    "perLevel": 0.003000000026077032,
+    "text": "{val} Defense"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/SolomonGrundy_A_01_Head_Data.SolomonGrundy_A_01_Head_Data"
+ },
+ "SolomonGrundy_A_Legs": {
+  "key": "SolomonGrundy_A_Legs",
+  "path": "Gear/SolomonGrundy_A_Legs",
+  "slot": "Legs",
+  "character": "SolomonGrundy_A",
+  "universal": false,
+  "baseStatsKey": "SolomonGrundy_A_Legs",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "Health",
+    "base": 200.0,
+    "perLevel": 50.0,
+    "text": "{val} Health"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/SolomonGrundy_A_01_Legs_Data.SolomonGrundy_A_01_Legs_Data"
+ },
+ "SolomonGrundy_A_Torso": {
+  "key": "SolomonGrundy_A_Torso",
+  "path": "Gear/SolomonGrundy_A_Torso",
+  "slot": "Torso",
+  "character": "SolomonGrundy_A",
+  "universal": false,
+  "baseStatsKey": "SolomonGrundy_A_Torso",
+  "coreEffects": [
+   {
+    "type": "BasicStatBoost",
+    "stat": "Health",
+    "base": 200.0,
+    "perLevel": 50.0,
+    "text": "{val} Health"
+   }
+  ],
+  "combatData": null,
+  "uiData": "/Game/UI/Assets/Gear/SolomonGrundy_A_01_Torso_Data.SolomonGrundy_A_01_Torso_Data"
+ },
  "Starfire_A_Arms": {
   "key": "Starfire_A_Arms",
   "path": "Gear/Starfire_A_Arms",
@@ -8662,7 +8852,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Supergirl_B_01_arms_Data.Supergirl_B_01_arms_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Supergirl/GearData_Supergirl_B_Arms.GearData_Supergirl_B_Arms"
  },
  "Supergirl_B_Equipment": {
   "key": "Supergirl_B_Equipment",
@@ -8681,7 +8871,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Supergirl_B_01_equipment_Data.Supergirl_B_01_equipment_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Supergirl/GearData_Supergirl_B_Equipment.GearData_Supergirl_B_Equipment"
  },
  "Supergirl_B_Head": {
   "key": "Supergirl_B_Head",
@@ -8700,7 +8890,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Supergirl_B_01_head_Data.Supergirl_B_01_head_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Supergirl/GearData_Supergirl_B_Head.GearData_Supergirl_B_Head"
  },
  "Supergirl_B_Legs": {
   "key": "Supergirl_B_Legs",
@@ -8719,7 +8909,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Supergirl_B_01_legs_Data.Supergirl_B_01_legs_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Supergirl/GearData_Supergirl_B_Legs.GearData_Supergirl_B_Legs"
  },
  "Supergirl_B_Torso": {
   "key": "Supergirl_B_Torso",
@@ -8738,7 +8928,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Supergirl_B_01_torso_Data.Supergirl_B_01_torso_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Supergirl/GearData_Supergirl_B_Torso.GearData_Supergirl_B_Torso"
  },
  "Supergirl_CW_Arms": {
   "key": "Supergirl_CW_Arms",
@@ -9327,7 +9517,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Superman_BR_arms_Data.Superman_BR_arms_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Superman/GearData_Superman_BR_Arms.GearData_Superman_BR_Arms"
  },
  "Superman_BR_Equipment": {
   "key": "Superman_BR_Equipment",
@@ -9346,7 +9536,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Superman_BR_equipment_Data.Superman_BR_equipment_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Superman/GearData_Superman_BR_Equipment.GearData_Superman_BR_Equipment"
  },
  "Superman_BR_Head": {
   "key": "Superman_BR_Head",
@@ -9365,7 +9555,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Superman_BR_head_Data.Superman_BR_head_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Superman/GearData_Superman_BR_Head.GearData_Superman_BR_Head"
  },
  "Superman_BR_Legs": {
   "key": "Superman_BR_Legs",
@@ -9384,7 +9574,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Superman_BR_legs_Data.Superman_BR_legs_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Superman/GearData_Superman_BR_Legs.GearData_Superman_BR_Legs"
  },
  "Superman_BR_Torso": {
   "key": "Superman_BR_Torso",
@@ -9403,7 +9593,7 @@
    }
   ],
   "combatData": null,
-  "uiData": "/Game/UI/Assets/Gear/Superman_BR_torso_Data.Superman_BR_torso_Data"
+  "uiData": "/Game/UI/Assets/Gear/Heroes/Superman/GearData_Superman_BR_Torso.GearData_Superman_BR_Torso"
  },
  "Superman_B_Arms": {
   "key": "Superman_B_Arms",

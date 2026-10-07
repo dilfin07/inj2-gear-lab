@@ -64,7 +64,6 @@ const TALENTS = [
   { id: 'crit12', name: 'Крит. шанс +12 %', stat: 'CriticalHitChance', val: 0.12 },
   { id: 'critdmg24', name: 'Крит. урон +24 %', stat: 'CritDamage', val: 0.24 },
   { id: 'lethal12', name: 'Смерт. атака +12 %', stat: 'LethalAttackChance', val: 0.12 },
-  { id: 'fast12', name: 'Быстрая атака +12 %', stat: 'FastAttackChance', val: 0.12 },
   { id: 'def12', name: 'Защита +12 %', stat: 'Defense', val: 0.12 },
   { id: 'pierce24', name: 'Пробой брони 24 %', stat: 'ArmorPierceChance', val: 0.24 },
   { id: 'critres12', name: 'Стойк. к криту +12 %', stat: 'CritResist', val: 0.12 },
@@ -455,6 +454,20 @@ function renderMatchups(ch) {
   }
 }
 
+/** game rich text (<Gold>…</>, <Bright Blue>…</>) as DOM — never as HTML */
+function richText(text, cls) {
+  const out = el('span', cls);
+  const re = /<([A-Za-z ]+)>(.*?)<\/>/g;
+  let at = 0, m;
+  while ((m = re.exec(text))) {
+    if (m.index > at) out.append(text.slice(at, m.index));
+    out.append(el('span', 'rt-' + m[1].toLowerCase().replace(/\s+/g, '-'), m[2]));
+    at = re.lastIndex;
+  }
+  out.append(text.slice(at).replace(/<[^>]*>/g, ''));
+  return out;
+}
+
 function renderSets(r) {
   const box = document.getElementById('sets');
   box.textContent = '';
@@ -464,6 +477,11 @@ function renderSets(r) {
     const row = el('div', 'set-row' + (on ? ' on' : ''));
     row.append(el('span', 'pieces', `${n}/5`));
     if (!e) { row.append(el('span', null, '—')); box.append(row); continue; }
+    if (e.desc) {
+      row.append(richText(e.desc, 'set-desc'));
+      box.append(row);
+      continue;
+    }
     const amount = e.pct || !FLAT.has(e.stat) ? pct(e.base) : fmt(e.base);
     const label = e.stat === 'Other'
       ? `${(e.text || 'особый эффект').replace(/\{val\}/g, '').replace(/<[^>]+>/g, '').trim()}: ${amount}`
@@ -832,7 +850,10 @@ function readHash() {
   if (p.get('m')) p.get('m').split('.').forEach((v, i) => { state.mods[SLOTS[i]] = v.split('~'); });
   if (p.get('t')) {
     const [t, leg] = p.get('t').split('|');
-    state.talents = t.split('~'); state.legendary = leg || '';
+    const known = (list, id) => list.some(x => x.id === id) ? id : '';
+    const ids = t.split('~');
+    state.talents = Array.from({ length: 7 }, (_, i) => known(TALENTS, ids[i] || ''));
+    state.legendary = known(TALENTS_LEG, leg || '');
   }
   if (p.get('o')) state.objective = p.get('o');
   if (p.get('ot')) state.optTalents = p.get('ot') === '1';

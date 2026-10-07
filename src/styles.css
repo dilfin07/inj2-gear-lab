@@ -301,6 +301,10 @@
   /* ---------- sets ---------- */
   .set-row { display: flex; gap: var(--s2); align-items: baseline; font-size: 12px; color: var(--muted-2); padding: 3px 0; }
   .set-row.on { color: var(--text); }
+  .set-desc { line-height: 1.35; }
+  .set-desc .rt-gold { color: var(--gold); font-weight: 600; }
+  .set-desc .rt-bright-blue { color: var(--cyan); }
+  .set-desc .rt-white { color: var(--text); }
   .set-row .pieces {
     font-family: var(--mono); font-size: 11px; color: var(--muted-2);
     border: 1px solid var(--line-soft); padding: 0 5px; min-width: 34px; text-align: center;

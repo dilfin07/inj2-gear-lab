@@ -932,17 +932,19 @@
     "BaseEffect": 0.05000000074505806
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "7546C2EA4400229C179A35A5255B0E0B",
-    "BaseEffect": 0.10000000149011612
-   },
-   "FivePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
     "StatToBoost": "EBoostableStat::FastAttackChance",
+    "EffectName": "GearSet_ThreePieceEffect",
     "PreresolvedDescriptionText": "{val} Fast Attack chance",
-    "PreresolvedDescriptionKey": "5E8A25FF4D9F49A3F064D3B7EF5C8D02",
+    "PreresolvedDescriptionKey": "A69B1ED640E0C266C749E5BD4E3A913E",
     "BaseEffect": 0.15000000596046448
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Aquaman_O",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "E07E9238470F17F0C1C8C0A1D87258AB",
+    "BaseEffect": 2.0
    }
   },
   "starTableOverride": null,
@@ -1103,7 +1105,8 @@
       "text": "Decrease {val} of opponent's Attack (base Attack stat), up to {max}, and add the same value to Hero"
      },
      {
-      "type": "GeneralDescriptor"
+      "type": "GeneralDescriptor",
+      "text": "{val} Power Generation"
      },
      {
       "type": "GeneralDescriptor",
@@ -1963,20 +1966,26 @@
     "BaseEffect": 0.11999999731779099
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_5",
-    "StatToBoost": "EBoostableStat::Health",
-    "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "D12BB09A410C380D9CEBE78522D7A5B8",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05999999865889549
-   },
-   "FivePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
     "StatToBoost": "EBoostableStat::Attack",
     "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "9FA6C6D545328DE7059ECC8056DD6589",
+    "PreresolvedDescriptionKey": "111627F84F4FED44E6ECA6AFF8379296",
     "bIsPercentBoost": true,
     "BaseEffect": 0.11999999731779099
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_DamageBoost_1",
+    "DamageTypeNames": [
+     "DamageTypeHazard",
+     "DamageTypeHazardDOT"
+    ],
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionText": "{val} team's Hazard and Hazard DoT Damage ",
+    "PreresolvedDescriptionKey": "DE4D693D46866C4AEF0788938213DA99",
+    "bIsPercentBoost": true,
+    "BaseEffect": 0.5,
+    "WhoIsAffected": "ECharacterEffectAffects::MyTeam",
+    "IncludeSummons": true
    }
   },
   "starTableOverride": [
@@ -3132,18 +3141,18 @@
     "BaseEffect": 0.05000000074505806
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Defense",
-    "PreresolvedDescriptionText": "{val} Defense",
-    "PreresolvedDescriptionKey": "D035C74145176D3CF7D6298207E29B2C",
-    "BaseEffect": 0.10000000149011612
-   },
-   "FivePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_1",
     "StatToBoost": "EBoostableStat::FastAttackChance",
     "PreresolvedDescriptionText": "{val} Fast Attack chance",
-    "PreresolvedDescriptionKey": "DE1C47674E2569C9935CFFAFE0AF9396",
+    "PreresolvedDescriptionKey": "332E6B584FD78B14B4D1C79705328297",
     "BaseEffect": 0.15000000596046448
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_BeastBoy_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "E0619E464C7BB6F01E135583B7EBBF90",
+    "BaseEffect": 2.0
    }
   },
   "starTableOverride": null,
@@ -3506,26 +3515,27 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "3FADE1CE4EE9F5D2EAA137ADE8B6A055",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
+    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
+    "EffectName": "GearSet_TwoPieceEffect",
+    "PreresolvedDescriptionText": "{val} Power generation {time}",
+    "PreresolvedDescriptionKey": "8736B9A64FF5AEB142E464A14A283FBD",
+    "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "431235E4441075AED9C7008DE1CB8D3A",
+    "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
+    "StatToBoost": "EBoostableStat::Attack",
+    "EffectName": "GearSet_ThreePieceEffect",
+    "PreresolvedDescriptionText": "{val} Attack",
+    "PreresolvedDescriptionKey": "73C30B104486E6B86BEB2D9FD388BB43",
+    "bIsPercentBoost": true,
     "BaseEffect": 0.10000000149011612
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "CF20188048559D19F8BD35AFF12FD0F2",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.10000000149011612
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_BlackAdam_B",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "4FCB02854708BCC271089FA72CE72CE9",
+    "BaseEffect": 0.699999988079071
    }
   },
   "starTableOverride": null,
@@ -4528,24 +4538,26 @@
    "TwoPieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_1",
     "StatToBoost": "EBoostableStat::LethalAttackChance",
+    "EffectName": "GearSet_TwoPieceEffect",
     "PreresolvedDescriptionText": "{val} Lethal Attack chance",
-    "PreresolvedDescriptionKey": "961E85A8464A7C365BB5FEBD577A956F",
+    "PreresolvedDescriptionKey": "4CB1D19E4DB77F963F8DC48D4C1A1211",
     "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_2",
     "StatToBoost": "EBoostableStat::Attack",
+    "EffectName": "GearSet_ThreePieceEffect",
     "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "B6BDA9BE4E4290D4AE97ECAB29A83031",
+    "PreresolvedDescriptionKey": "17A0EF014D70663E5077B1869181EA3D",
     "bIsPercentBoost": true,
     "BaseEffect": 0.05000000074505806
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_3",
-    "StatToBoost": "EBoostableStat::Defense",
-    "PreresolvedDescriptionText": "{val} Defense",
-    "PreresolvedDescriptionKey": "0F6A59454DEEE845D19EAA8CE3BA197B",
-    "BaseEffect": 0.10000000149011612
+    "__ref__": "CharacterEffectDefinition_CustomBonus_1",
+    "DescriptionTextOverride": "Gear5SetBonus_BlackManta_18",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "B3C883B9472AD8D7B1D73B86BFB83304",
+    "BaseEffect": 0.029999999329447746
    }
   },
   "starTableOverride": [
@@ -5028,24 +5040,25 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_1",
+    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
     "StatToBoost": "EBoostableStat::FastAttackChance",
+    "EffectName": "GearSet_TwoPieceEffect",
     "PreresolvedDescriptionText": "{val} Fast Attack chance",
-    "PreresolvedDescriptionKey": "D5FA547143E99AB12CF70AACE32E3A7A",
+    "PreresolvedDescriptionKey": "2F8C834E4EFFD7C385A0DE972189FE98",
     "BaseEffect": 0.05000000074505806
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Defense",
-    "PreresolvedDescriptionText": "{val} Defense",
-    "PreresolvedDescriptionKey": "0A7EF0BD4AF6BC7A468201A8C5A563C7",
-    "BaseEffect": 0.10000000149011612
-   },
-   "FivePieceEffect": {
     "__ref__": "CharacterEffectDefinition_StunResistance_0",
     "PreresolvedDescriptionText": "{val} Stun Resistance",
-    "PreresolvedDescriptionKey": "9BEB90CA483C6595CB3D36BE56C0199F",
+    "PreresolvedDescriptionKey": "47DD40294F0A611FF57D83A4B737133D",
     "BaseEffect": 0.15000000596046448
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_1",
+    "DescriptionTextOverride": "Gear5SetBonus_BlueBeetle_B",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "A2AB3D0B4CEF4DBBA2A99992AB7EFB72",
+    "BaseEffect": 6.0
    }
   },
   "starTableOverride": null,
@@ -5218,25 +5231,24 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::FastAttackChance",
-    "PreresolvedDescriptionText": "{val} Fast Attack chance",
-    "PreresolvedDescriptionKey": "6B586E424CEDA0C96F03AD86D9934523",
-    "BaseEffect": 0.10000000149011612
-   },
-   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_2",
     "StatToBoost": "EBoostableStat::Attack",
     "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "26B9E7DA49B50BCEE4E1CBB5E79BFD89",
+    "PreresolvedDescriptionKey": "C3CDB35248B02023DC8CA2AB5C73C890",
     "bIsPercentBoost": true,
     "BaseEffect": 0.10000000149011612
    },
-   "FivePieceEffect": {
+   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
     "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "DEDA9A9B4410436B050CCA9564601730",
+    "PreresolvedDescriptionKey": "A603B13A40863208377CAEB6A78E75BA",
     "BaseEffect": 0.10000000149011612
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Brainiac_A",
+    "PreresolvedDescriptionKey": "0D4BC91A419C8377C10B6B8934596D3C",
+    "BaseEffect": 0.30000001192092896
    }
   },
   "starTableOverride": [
@@ -5900,26 +5912,27 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "77AEF5FF4B72AA5136F33B99A30170E4",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
-   },
-   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_5",
     "StatToBoost": "EBoostableStat::Health",
+    "EffectName": "GearSet_TwoPieceEffect",
     "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "A9D4829349B3649666A7F6899C5476A9",
+    "PreresolvedDescriptionKey": "542BD53C4016ECF4B6FA9DA32C3A1CF7",
     "bIsPercentBoost": true,
     "BaseEffect": 0.10000000149011612
    },
-   "FivePieceEffect": {
+   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_PowerGenRate_2",
+    "EffectName": "GearSet_ThreePieceEffect",
     "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "D262F3804139FFA066383DBF70F4B351",
+    "PreresolvedDescriptionKey": "11D596194ED785827BD54A8F91471C04",
     "BaseEffect": 0.11999999731779099
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_CaptainCold_MF",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "975CA7914340FE9F6B8042B503B162D3",
+    "BaseEffect": 0.5
    }
   },
   "starTableOverride": [
@@ -7062,26 +7075,26 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "187E9F5E4BC85A5833ED9092CC87C8CB",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
-   },
-   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
+    "EffectName": "GearSet_TwoPieceEffect",
     "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "4F87B84F4FFE73512B67AD8116669E23",
+    "PreresolvedDescriptionKey": "777C9F024103C3EF58C32C80E9325332",
     "BaseEffect": 0.10000000149011612
    },
-   "FivePieceEffect": {
+   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
     "StatToBoost": "EBoostableStat::Attack",
+    "EffectName": "GearSet_ThreePieceEffect",
     "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "4292940C432AF4606371D0ABB653050E",
+    "PreresolvedDescriptionKey": "EE3D758C4D127FE346CA63A75058E616",
     "bIsPercentBoost": true,
     "BaseEffect": 0.15000000596046448
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Constantine_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "EB2FE08E4CAAF4528194B29AD733BE7B"
    }
   },
   "starTableOverride": null,
@@ -8255,16 +8268,18 @@
     "BaseEffect": 0.05000000074505806
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_AdditionalBlockMitigation_0",
-    "PreresolvedDescriptionText": "{val} Block effectiveness",
-    "PreresolvedDescriptionKey": "CC3DFF584ECA9AE1DED71597C977FFEC",
-    "BaseEffect": 0.10000000149011612
+    "__ref__": "CharacterEffectDefinition_CritDamage_0",
+    "EffectName": "GearSet_ThreePieceEffect",
+    "PreresolvedDescriptionText": "{val} Critical Attack Damage ",
+    "PreresolvedDescriptionKey": "DD9E710344FDFD27B86C338CF631CCC8",
+    "BaseEffect": 0.15000000596046448
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_CritDamage_0",
-    "PreresolvedDescriptionText": "{val} Critical Attack Damage ",
-    "PreresolvedDescriptionKey": "3967F5B8484680376F5518ADD32C58C8",
-    "BaseEffect": 0.15000000596046448
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_DamianWayne_M",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "1EF0E27D498B0B6FB23922B4E8F6853D",
+    "BaseEffect": 0.10000000149011612
    }
   },
   "starTableOverride": null,
@@ -8815,20 +8830,18 @@
     "BaseEffect": 0.11999999731779099
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_5",
-    "StatToBoost": "EBoostableStat::Health",
-    "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "4D2A62B4405BD6673028479C03D96710",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05999999865889549
-   },
-   "FivePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
     "StatToBoost": "EBoostableStat::Health",
     "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "0C1E1A8E4EE8DAE38E0874B7B4B2C18D",
+    "PreresolvedDescriptionKey": "9E42482340843F50CB1206B65A2A9A3B",
     "bIsPercentBoost": true,
     "BaseEffect": 0.11999999731779099
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_1",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "C076980C403E137998D56AA6BF0330AC",
+    "BaseEffect": 1.0
    }
   },
   "starTableOverride": [
@@ -8988,7 +9001,7 @@
       "type": "ArmorPierceChance",
       "base": 1.0,
       "isPercent": true,
-      "text": " Armor-Pierce  "
+      "text": "Armor-Pierce "
      }
     ]
    },
@@ -9498,27 +9511,26 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_6",
-    "StatToBoost": "EBoostableStat::Health",
-    "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "CED7E81E4F6C23658F50608035CDF35A",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
-   },
-   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_5",
     "StatToBoost": "EBoostableStat::Attack",
     "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "B525CAD04DB13B61085148B68CC846CA",
+    "PreresolvedDescriptionKey": "287CB656443C3A53380F54A6F2E35E5C",
     "bIsPercentBoost": true,
     "BaseEffect": 0.10000000149011612
    },
-   "FivePieceEffect": {
+   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
     "StatToBoost": "EBoostableStat::CriticalHitChance",
     "PreresolvedDescriptionText": "{val} Critical Attack chance",
-    "PreresolvedDescriptionKey": "E6DB99524CD0EE242B1E55BF64461F60",
+    "PreresolvedDescriptionKey": "577FF68D4789E6CD1E7F5099D5EEE949",
     "BaseEffect": 0.10000000149011612
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Deathstroke_B",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "80C4458F4A5BCF1BE53F3DA8097ABE67",
+    "BaseEffect": 0.30000001192092896
    }
   },
   "starTableOverride": null,
@@ -10009,19 +10021,19 @@
    },
    "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_5",
-    "StatToBoost": "EBoostableStat::Health",
-    "PreresolvedDescriptionText": "{val} Health",
+    "StatToBoost": "EBoostableStat::Attack",
+    "EffectName": "GearSet_ThreePieceEffect",
+    "PreresolvedDescriptionText": "{val} Attack",
     "PreresolvedDescriptionKey": "65857A71440F7990D2805B9B7FE433A8",
     "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
+    "BaseEffect": 0.10000000149011612
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "7AEFD7BB422EBDA0941DCA86450CCBFE",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.10000000149011612
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Enchantress_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "16913AC74B2F4B2D7A60B08C0C1C62B6",
+    "BaseEffect": 2.0
    }
   },
   "starTableOverride": null,
@@ -10058,7 +10070,7 @@
       "type": "ArmorPierceChance",
       "base": 1.0,
       "isPercent": true,
-      "text": " Armor-Pierce  "
+      "text": "Armor-Pierce "
      }
     ]
    },
@@ -10692,20 +10704,20 @@
     "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_5",
-    "StatToBoost": "EBoostableStat::Health",
-    "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "5C1C11F34A55137B1FD7CDA1D726F82F",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05999999865889549
-   },
-   "FivePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
     "StatToBoost": "EBoostableStat::Health",
+    "EffectName": "GearSet_ThreePieceEffect",
     "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "A32F0E4F4BCAE980A4C9478772B4ACE1",
+    "PreresolvedDescriptionKey": "480C505449E30BB4AEB21CBCCFA0513B",
     "bIsPercentBoost": true,
     "BaseEffect": 0.11999999731779099
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_GorillaGrodd_NIN",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "E38D3F4647C50C0E6F9CD88A4127ED08",
+    "BaseEffect": 0.5
    }
   },
   "starTableOverride": [
@@ -10982,7 +10994,7 @@
      },
      {
       "type": "GeneralDescriptor",
-      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}"
+      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}.\r\n<Yellow>Unhittable:</> Ignore all incoming attacks."
      }
     ]
    }
@@ -11710,11 +11722,12 @@
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "SkillDamage",
-      "text": "{val} Hazard DoT Damage "
+      "text": "{val} Hazard DoT Damage for <gold>{duration}</> seconds",
+      "Duration": 7.0
      }
     ]
    },
@@ -11734,7 +11747,7 @@
      },
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -11746,7 +11759,11 @@
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Applies Burn for {time} seconds"
      }
     ]
    },
@@ -11758,7 +11775,7 @@
     "effects": [
      {
       "type": "GeneralDescriptor",
-      "text": "Hammer: {time} {sec} Stun duration\r\nLantern: {pwr} {SingularPluralKey} gained\r\nSword: {val} Critical Attack damage"
+      "text": "Lantern: {pwr} {SingularPluralKey} gained\r\nHammer: {time} {sec} Stun duration\r\nSword: {val} Critical Attack damage and <Gold>100%</> Critical Attack Chance for <Gold>10</> seconds."
      }
     ]
    },
@@ -11770,23 +11787,263 @@
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{value} Shield health"
      }
     ]
    },
    {
     "slot": "Passive2",
-    "enabled": false,
+    "enabled": true,
     "powerCost": 0,
-    "asset": null,
-    "effects": []
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_B_Passive2_Data.GreenLantern_B_Passive2_Data",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "{percent}% of the maximum Health Shield when teammate is targeted by opponent’s Special.\r\nCooldown {time} {sec}."
+     }
+    ]
    },
    {
     "slot": "Passive3",
-    "enabled": false,
+    "enabled": true,
     "powerCost": 0,
-    "asset": null,
-    "effects": []
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_B_Passive3_Data.GreenLantern_B_Passive3_Data",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "Healing Tagged-out teammates for {percent}% of their Maximum Health per second."
+     },
+     {
+      "type": "HealthRegen",
+      "base": 0.00800000037997961,
+      "perLevel": 0.0020000000949949026,
+      "isPercent": true,
+      "affects": "MyTeam",
+      "text": "{val} Health regenerated per second while tagged-out"
+     }
+    ]
+   },
+   {
+    "slot": "ClassPassive",
+    "enabled": true,
+    "powerCost": 0,
+    "asset": "/Game/UI/Assets/Skills/ClassPassive/SkillLegend_ClassPassive_Arcane.SkillLegend_ClassPassive_Arcane",
+    "effects": [
+     {
+      "type": "PowerGenRate",
+      "base": 0.05000000074505806,
+      "perLevel": 0.03333299979567528,
+      "isPercent": true,
+      "text": "{val} Power generation {time}"
+     },
+     {
+      "type": "StealAttackStat",
+      "base": 0.029999999329447746,
+      "perLevel": 0.004999999888241291,
+      "text": "Decrease {val} of opponent's Attack (base Attack stat), up to {max}, and add the same value to Hero"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{val} Power Generation"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Successful Specials decrease the opponent’s base Attack by {value} and give it to the <Bright Blue>Arcane</> Hero.\r\nStacks up to {max}."
+     }
+    ]
+   }
+  ]
+ },
+ "GreenLantern_GG": {
+  "key": "GreenLantern_GG",
+  "path": "Characters/GreenLantern_GG",
+  "isBoss": false,
+  "class": "Magic",
+  "alignment": "Hero",
+  "gender": "Male",
+  "tier": "Legendary",
+  "tags": null,
+  "attack": 550,
+  "health": 2000,
+  "attackScalar": 36.0,
+  "healthScalar": 210.0,
+  "critChance": 0.10000000149011612,
+  "critMultiplier": 1.75,
+  "lethalChance": 0.0,
+  "fastAttackChance": 0.0,
+  "shardGrowth": "VerySlow",
+  "startingStar": 3,
+  "threatTraitsMultiplier": 1.2000000476837158,
+  "gearSet": {
+   "TwoPieceEffect": {
+    "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
+    "StatToBoost": "EBoostableStat::Attack",
+    "EffectName": "GearSet_TwoPieceEffect",
+    "PreresolvedDescriptionText": "{val} Attack",
+    "PreresolvedDescriptionKey": "2FFB5DE54442BE1E5506019FC364154A",
+    "bIsPercentBoost": true,
+    "BaseEffect": 0.10000000149011612
+   },
+   "ThreePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_BasicStatBoost_5",
+    "StatToBoost": "EBoostableStat::Defense",
+    "EffectName": "GearSet_ThreePieceEffect",
+    "PreresolvedDescriptionText": "{val} Defense",
+    "PreresolvedDescriptionKey": "8398D8834520B108E682BC8C510A1EA0",
+    "BaseEffect": 0.10000000149011612
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_GreenLantern_GG",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "CD97B45B43832E24828C768B14C5935C"
+   }
+  },
+  "starTableOverride": null,
+  "skills": [
+   {
+    "slot": "SP1",
+    "enabled": true,
+    "powerCost": 4,
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_GG_SP1_Data.GreenLantern_GG_SP1_Data",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Activates Green Lantern Form"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Unblockable"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Unavailable in Green Lantern Form"
+     }
+    ]
+   },
+   {
+    "slot": "SP2",
+    "enabled": true,
+    "powerCost": 6,
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_GG_SP2_Data.GreenLantern_GG_SP2_Data",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{number} opponent’s Power cost increase for {duration} seconds"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Green Lantern Form: <gold>100%</> Blind for {time} seconds"
+     }
+    ]
+   },
+   {
+    "slot": "SP3",
+    "enabled": true,
+    "powerCost": 7,
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_GG_SP3_Data.GreenLantern_GG_SP3_Data",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{powerslow} opponent’s Power Slow debuff for {duration} seconds on the opponent"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Green Lantern Form: {percent} damage for each empty opponent’s Power Bar"
+     }
+    ]
+   },
+   {
+    "slot": "Passive",
+    "enabled": true,
+    "powerCost": 0,
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_GG_Passive1_Data.GreenLantern_GG_Passive1_Data",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "{number} Green Lantern Energy per second while Combo Meter is higher than {meter}"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{percent} Power Generation for each <gold>10%</> Green Lantern Energy "
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "POWER RING passive shared with active teammate"
+     }
+    ]
+   },
+   {
+    "slot": "SuperMove",
+    "enabled": true,
+    "powerCost": 10,
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_GG_Super_Data.GreenLantern_GG_Super_Data",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{duration} {sec} of the Green Lantern Form"
+     }
+    ]
+   },
+   {
+    "slot": "Passive2",
+    "enabled": true,
+    "powerCost": 0,
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_GG_Passive2_Data.GreenLantern_GG_Passive2_Data",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "{time} seconds of the Green Lantern Form"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{percent} Damage to Armor-Piercing Basic and Swipe Attacks per <gold>10%</> Green Lantern Energy.These attacks have {appercent} Armor-Pierce Chance and consume {float} Power Bars."
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{float} Power Bar Drain with any Specials"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{powercost} Power cost decrease"
+     }
+    ]
+   },
+   {
+    "slot": "Passive3",
+    "enabled": true,
+    "powerCost": 0,
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_GG_Passive3_Data.GreenLantern_GG_Passive3_Data",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "{number} Green Lantern Energy per second if Power is full"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Activates Green Lantern form with maximum Energy on last {time} seconds of the combat"
+     }
+    ]
    },
    {
     "slot": "ClassPassive",
@@ -11873,11 +12130,12 @@
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "SkillDamage",
-      "text": "{val} Hazard DoT Damage "
+      "text": "{val} Hazard DoT Damage for <gold>{duration}</> seconds",
+      "Duration": 7.0
      }
     ]
    },
@@ -11889,12 +12147,12 @@
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "ArmorPierceChance",
       "base": 1.0,
-      "text": " Armor-Pierce  "
+      "text": "Armor-Pierce "
      }
     ]
    },
@@ -11906,7 +12164,11 @@
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Opponent’s Tag Out Disable for {time} seconds"
      }
     ]
    },
@@ -11918,15 +12180,15 @@
     "effects": [
      {
       "type": "DamageBoost",
-      "base": 0.6000000238418579,
+      "base": 0.4000000059604645,
       "perLevel": 0.10000000149011612,
       "isPercent": true,
       "affects": "MyTeam",
-      "text": "{val} team's Hazard and Hazard DoT Damage "
+      "text": "{val} team's Hazard and Hazard DoT Damage"
      },
      {
       "type": "DamageMitigation",
-      "base": 0.30000001192092896,
+      "base": 0.20000000298023224,
       "perLevel": 0.05000000074505806,
       "isPercent": true,
       "affects": "MyTeam",
@@ -11935,16 +12197,7 @@
      {
       "type": "HazardEffectsImmunity",
       "affects": "MyTeam",
-      "text": "team Immune to hazard secondary effects"
-     },
-     {
-      "type": "BasicStatBoost",
-      "stat": "Attack",
-      "base": 0.10000000149011612,
-      "perLevel": 0.02500000037252903,
-      "isPercent": true,
-      "affects": "MyTeam",
-      "text": "{val} Attack for Green Lantern teammates "
+      "text": "Team Immune to hazard secondary effects"
      }
     ]
    },
@@ -11956,23 +12209,57 @@
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Reduce opponent team Defense by {percent}"
      }
     ]
    },
    {
     "slot": "Passive2",
-    "enabled": false,
+    "enabled": true,
     "powerCost": 0,
-    "asset": null,
-    "effects": []
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_JS_Passive2_Data.GreenLantern_JS_Passive2_Data",
+    "effects": [
+     {
+      "type": "ApplyDOTOnEnemyHit",
+      "base": 0.00800000037997961,
+      "perLevel": 0.0020000000949949026,
+      "affects": "MyTeam",
+      "text": "{val} additional Damage over Time on Basic and Swipe Attacks"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{percent} additional Hazard DoT Damage for teammates Basic and Swipe Attacks"
+     }
+    ]
    },
    {
     "slot": "Passive3",
-    "enabled": false,
+    "enabled": true,
     "powerCost": 0,
-    "asset": null,
-    "effects": []
+    "asset": "/Game/UI/Assets/Skills/GreenLantern_JS_Passive3_Data.GreenLantern_JS_Passive3_Data",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "Doubles the Attack Stat bonus if John Stewart is in the team"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Saves teammate from KO and heals him for {percent} of his maximum Health. Cooldown {time} seconds"
+     },
+     {
+      "type": "BasicStatBoost",
+      "stat": "Attack",
+      "base": 0.4000000059604645,
+      "perLevel": 0.10000000149011612,
+      "isPercent": true,
+      "affects": "MyTeammates",
+      "text": "{val} Attack for Green Lantern teammates "
+     }
+    ]
    },
    {
     "slot": "ClassPassive",
@@ -12549,19 +12836,19 @@
     "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_1",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "AD46B61944152D83E7620594D735DF13",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
-   },
-   "FivePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
     "StatToBoost": "EBoostableStat::Defense",
+    "EffectName": "GearSet_ThreePieceEffect",
     "PreresolvedDescriptionText": "{val} Defense",
-    "PreresolvedDescriptionKey": "0765C9CC4A1C43776F911EB094DF574B",
+    "PreresolvedDescriptionKey": "6EDFCC214A697642208716ACBE56E9D3",
     "BaseEffect": 0.10000000149011612
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_HarleyQuinn_SS",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "E8962C4F4565FA9C7FCFAE9FFDA83B86",
+    "BaseEffect": 0.30000001192092896
    }
   },
   "starTableOverride": [
@@ -13489,24 +13776,26 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Defense",
-    "PreresolvedDescriptionText": "{val} Defense",
-    "PreresolvedDescriptionKey": "CE5B18FD4E375723AE7666B0ED3AA6D1",
+    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
+    "EffectName": "GearSet_TwoPieceEffect",
+    "PreresolvedDescriptionText": "{val} Power generation {time}",
+    "PreresolvedDescriptionKey": "0869849E4DBFDD227542568F1208167E",
     "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "627F45F8494D3EF03DBEFCBAE36E5F78",
-    "BaseEffect": 0.10000000149011612
-   },
-   "FivePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
     "StatToBoost": "EBoostableStat::Attack",
+    "EffectName": "GearSet_ThreePieceEffect",
     "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "386552F248C552F101A6D6B7B2D44898",
+    "PreresolvedDescriptionKey": "A3729C9541718CA973B2FD9D136A5D74",
     "bIsPercentBoost": true,
+    "BaseEffect": 0.15000000596046448
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_KillerFrost_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "13CDFC7B4878C09D4BB32CB98F430FC5",
     "BaseEffect": 0.15000000596046448
    }
   },
@@ -14098,17 +14387,18 @@
     "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "8DB615FF475DC31DE0D18D9DF93722B4",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.10000000149011612
+    "__ref__": "CharacterEffectDefinition_CritDamage_0",
+    "EffectName": "GearSet_ThreePieceEffect",
+    "PreresolvedDescriptionText": "{val} Critical Attack Damage ",
+    "PreresolvedDescriptionKey": "AA10140A45C301EE701A95890BB01A7C",
+    "BaseEffect": 0.20000000298023224
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_CritDamage_0",
-    "PreresolvedDescriptionText": "{val} Critical Attack Damage ",
-    "PreresolvedDescriptionKey": "FB493C0047B6E4CC450B079769FFF0F4",
-    "BaseEffect": 0.20000000298023224
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_MartianManhunter_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "4B22F97D4FC4B79C4DAC0F9CD7F7AD1C",
+    "BaseEffect": 0.25
    }
   },
   "starTableOverride": null,
@@ -14293,10 +14583,11 @@
     "BaseEffect": 0.10000000149011612
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_DOTResistance_0",
-    "PreresolvedDescriptionText": "{val} Damage over Time resistance",
-    "PreresolvedDescriptionKey": "28F1A2B946EADA21DC879C83D0331A75",
-    "BaseEffect": 0.05000000074505806
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Peacemaker_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "495F21E249C34A424A915590446BB777",
+    "BaseEffect": 0.20000000298023224
    }
   },
   "starTableOverride": null,
@@ -14995,26 +15286,27 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "99363BD44A4A1E4CDFA93CA5EF789FF6",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
+    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
+    "EffectName": "GearSet_TwoPieceEffect",
+    "PreresolvedDescriptionText": "{val} Power generation {time}",
+    "PreresolvedDescriptionKey": "6CC451594A0E22B5FB9C8096C6AF0001",
+    "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "BB352BF348174193E064E6ADBDEC6366",
+    "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
+    "StatToBoost": "EBoostableStat::Attack",
+    "EffectName": "GearSet_ThreePieceEffect",
+    "PreresolvedDescriptionText": "{val} Attack",
+    "PreresolvedDescriptionKey": "267737DB4199F3F6A1682BA3217A84D8",
+    "bIsPercentBoost": true,
     "BaseEffect": 0.10000000149011612
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "438962714F3D26FB17D11E9CC50F8B78",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.10000000149011612
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Raven_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "7E5B3EBF40DA831369F8A1AB287CB4B1",
+    "BaseEffect": 5.0
    }
   },
   "starTableOverride": null,
@@ -15877,10 +16169,11 @@
     "BaseEffect": 0.10000000149011612
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_DOTResistance_0",
-    "PreresolvedDescriptionText": "{val} Damage over Time resistance",
-    "PreresolvedDescriptionKey": "8167E0314054A722984FF3A218F9EFE9",
-    "BaseEffect": 0.05000000074505806
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Scorpion_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "DD6FC41848D1B1475918248658081F8A",
+    "BaseEffect": 2.0
    }
   },
   "starTableOverride": null,
@@ -16021,7 +16314,8 @@
       "text": "Decrease {val} of opponent's Attack (base Attack stat), up to {max}, and add the same value to Hero"
      },
      {
-      "type": "GeneralDescriptor"
+      "type": "GeneralDescriptor",
+      "text": "{val} Power Generation"
      },
      {
       "type": "GeneralDescriptor",
@@ -16240,26 +16534,27 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "282686004618B75D8FAD32B51B57F7D6",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
+    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
+    "EffectName": "GearSet_TwoPieceEffect",
+    "PreresolvedDescriptionText": "{val} Power generation {time}",
+    "PreresolvedDescriptionKey": "B3CDAC1844D7C2A982EFE3A4DD55DAF9",
+    "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "49AFFDCB4731E311F9DD5FB0518BAA6C",
+    "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
+    "StatToBoost": "EBoostableStat::Attack",
+    "EffectName": "GearSet_ThreePieceEffect",
+    "PreresolvedDescriptionText": "{val} Attack",
+    "PreresolvedDescriptionKey": "A387223F4B9F81BF31A183A245C6D99B",
+    "bIsPercentBoost": true,
     "BaseEffect": 0.10000000149011612
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "7B346B8441CC355A7A43B88C90595A3A",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.10000000149011612
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Shazam_23",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "0F59ECFC4F35A6B93CCBEC81BF44F439",
+    "BaseEffect": 2.0
    }
   },
   "starTableOverride": null,
@@ -16392,13 +16687,195 @@
       "text": "Decrease {val} of opponent's Attack (base Attack stat), up to {max}, and add the same value to Hero"
      },
      {
-      "type": "GeneralDescriptor"
+      "type": "GeneralDescriptor",
+      "text": "{val} Power Generation"
      },
      {
       "type": "GeneralDescriptor",
       "text": "Successful Specials decrease the opponent’s base Attack by {value} and give it to the <Bright Blue>Arcane</> Hero.\r\nStacks up to {max}."
      }
     ]
+   }
+  ]
+ },
+ "SolomonGrundy_A": {
+  "key": "SolomonGrundy_A",
+  "path": "Characters/SolomonGrundy_A",
+  "isBoss": false,
+  "class": "MetaHuman",
+  "alignment": "Villain",
+  "gender": "Male",
+  "tier": "Legendary",
+  "tags": null,
+  "attack": 500,
+  "health": 2400,
+  "attackScalar": 35.0,
+  "healthScalar": 235.0,
+  "critChance": 0.10000000149011612,
+  "critMultiplier": 1.7000000476837158,
+  "lethalChance": 0.009999999776482582,
+  "fastAttackChance": 0.0,
+  "shardGrowth": "VerySlow",
+  "startingStar": 3,
+  "threatTraitsMultiplier": 1.2000000476837158,
+  "gearSet": {
+   "TwoPieceEffect": {
+    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
+    "StatToBoost": "EBoostableStat::Defense",
+    "EffectName": "GearSet_TwoPieceEffect",
+    "PreresolvedDescriptionText": "{val} Defense",
+    "PreresolvedDescriptionKey": "004FD2E141269296295FB0B9897978C6",
+    "BaseEffect": 0.30000001192092896
+   },
+   "ThreePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_BasicStatBoost_1",
+    "StatToBoost": "EBoostableStat::Health",
+    "EffectName": "GearSet_ThreePieceEffect",
+    "PreresolvedDescriptionText": "{val} Health",
+    "PreresolvedDescriptionKey": "0171F15843B3B9860DA6449D730C48CF",
+    "bIsPercentBoost": true,
+    "BaseEffect": 0.30000001192092896
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_SolomonGrundy_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "3015129940A1A5697D77A2B62EC97BC4",
+    "BaseEffect": 1.0
+   }
+  },
+  "starTableOverride": null,
+  "skills": [
+   {
+    "slot": "SP1",
+    "enabled": true,
+    "powerCost": 3,
+    "asset": "/Game/UI/Assets/Skills/SolomonGrundy_A_SP1_Data.SolomonGrundy_A_SP1_Data",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Removes all <White>Shields</> and <White>Barriers</> from the target."
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Increases <White>The Mire</> size, up to {value} times."
+     }
+    ]
+   },
+   {
+    "slot": "SP2",
+    "enabled": true,
+    "powerCost": 5,
+    "asset": "/Game/UI/Assets/Skills/SolomonGrundy_A_SP2_Data.SolomonGrundy_A_SP2_Data",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Removes a random active buff from the opponent."
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Apply {value} <White>Rot</> stack if the target is inside the <White>The Mire</>."
+     }
+    ]
+   },
+   {
+    "slot": "SP3",
+    "enabled": true,
+    "powerCost": 7,
+    "asset": "/Game/UI/Assets/Skills/SolomonGrundy_A_SP3_Data.SolomonGrundy_A_SP3_Data",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Consumes all <White>Rot</> stacks from all opponents."
+     }
+    ]
+   },
+   {
+    "slot": "Passive",
+    "enabled": true,
+    "powerCost": 0,
+    "asset": "/Game/UI/Assets/Skills/SolomonGrundy_A_Passive1_Data.SolomonGrundy_A_Passive1_Data",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "On tag-in and every {time} seconds after the previous Mire expires and while the wearer is active, create a moving hazard zone: <White>The Mire</> that follows the opponent’s hero for {livetime} seconds."
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "While Grundy is inside the Mire:\r\n• Prevents Grundy`s KO, absorbs all Rot stacks from all opponents and restore {percent} Health per Rot stack absorbed. Can exceed Max Health.\r\n• Can occur up to {value} <Gold>times per battle</>."
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "While an opponent is inside the Mire:\r\n• Gains {value} Rot stack every {time} seconds."
+     }
+    ]
+   },
+   {
+    "slot": "SuperMove",
+    "enabled": true,
+    "powerCost": 10,
+    "asset": "/Game/UI/Assets/Skills/SolomonGrundy_A_Super_Data.SolomonGrundy_A_Super_Data",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Guaranteed {value} stack Rot on opponent after consuming"
+     }
+    ]
+   },
+   {
+    "slot": "Passive2",
+    "enabled": true,
+    "powerCost": 0,
+    "asset": "/Game/UI/Assets/Skills/SolomonGrundy_A_Passive2_Data.SolomonGrundy_A_Passive2_Data",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "<White>Rot</>: Each stack applies an additional debuff to the opponent. Maximum {maxstacks} stacks.\r\n• <White>1 Stack</>: Healing is disabled.\r\n• <White>2 Stacks</>: Opponent damage is reduced by {percent}.\r\n• <White>3 Stacks</>: Disables tag-outs and blocking while inside the Mire.\r\n• <White>4 Stacks</>: The Mire's duration no longer decreases while an opponent remains inside it.\r\n• <White>5 Stacks</>: Rot spreads to the opponent's teammates, applying {value} stack every {time} seconds."
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Once an opponent reaches the maximum <White>Rot</> stacks, each subsequent <White>Rot</> is consumed. Each Consumed <White>Rot</> deals {percent} damage from Attack Stat. "
+     }
+    ]
+   },
+   {
+    "slot": "Passive3",
+    "enabled": true,
+    "powerCost": 0,
+    "asset": "/Game/UI/Assets/Skills/SolomonGrundy_A_Passive3_Data.SolomonGrundy_A_Passive3_Data",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "<Bright Blue>Solomon Grundy</> has <Yellow>Stun</>, <Yellow>Freeze</>, and <Yellow>Burn Immunity</>."
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Any other negative effect applied to Grundy has a {chance} chance to be negated, restoring {percent} Health instead."
+     }
+    ]
+   },
+   {
+    "slot": "ClassPassive",
+    "enabled": true,
+    "powerCost": 0,
+    "asset": "/Game/UI/Assets/Skills/ClassPassive/SkillLegend_ClassPassive_Metahuman.SkillLegend_ClassPassive_Metahuman",
+    "effects": []
    }
   ]
  },
@@ -16796,7 +17273,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_A_SP1_Data.Supergirl_A_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_A_SP01.SkillLegend_Supergirl_A_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -16808,11 +17285,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_A_SP2_Data.Supergirl_A_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_A_SP02.SkillLegend_Supergirl_A_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -16820,11 +17297,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_A_SP3_Data.Supergirl_A_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_A_SP03.SkillLegend_Supergirl_A_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -16832,7 +17309,7 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_A_Passive_Data.Supergirl_A_Passive_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_A_Passive01.SkillLegend_Supergirl_A_Passive01",
     "effects": [
      {
       "type": "NoSpecialCost",
@@ -16846,11 +17323,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -16945,7 +17422,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_AR_SP1_Data.Supergirl_AR_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_AR_SP01.SkillLegend_Supergirl_AR_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -16956,7 +17433,7 @@
       "base": 0.25,
       "perLevel": 0.002199999988079071,
       "isPercent": true,
-      "text": "{val} Damage for Special 1 to Might opponents"
+      "text": "{val} Damagefor Special 1 to Might opponents"
      },
      {
       "type": "GeneralDescriptor",
@@ -16968,11 +17445,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_AR_SP2_Data.Supergirl_AR_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_AR_SP02.SkillLegend_Supergirl_AR_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -16988,18 +17465,18 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 5,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_AR_SP3_Data.Supergirl_AR_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_AR_SP03.SkillLegend_Supergirl_AR_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "DamageBoost",
       "base": 0.25,
       "perLevel": 0.002199999988079071,
       "isPercent": true,
-      "text": "{val} Damage for Special 3 to burning opponents"
+      "text": "{val} Damagefor Special 3 to burning opponents"
      },
      {
       "type": "GeneralDescriptor",
@@ -17015,7 +17492,7 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_AR_Passive01_Data.Supergirl_AR_Passive01_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_AR_Passive01.SkillLegend_Supergirl_AR_Passive01",
     "effects": [
      {
       "type": "StartingPower",
@@ -17029,11 +17506,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -17041,7 +17518,7 @@
     "slot": "Passive2",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_AR_Passive02_Data.Supergirl_AR_Passive02_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_AR_Passive02.SkillLegend_Supergirl_AR_Passive02",
     "effects": [
      {
       "type": "PowerGenRate",
@@ -17053,7 +17530,7 @@
     "slot": "Passive3",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_AR_Passive03_Data.Supergirl_AR_Passive03_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_AR_Passive03.SkillLegend_Supergirl_AR_Passive03",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -17082,7 +17559,7 @@
      },
      {
       "type": "GeneralDescriptor",
-      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}"
+      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}.\r\n<Yellow>Unhittable:</> Ignore all incoming attacks."
      }
     ]
    }
@@ -17138,7 +17615,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_SP1_Data.Supergirl_B_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_SP01.SkillLegend_Supergirl_B_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -17150,11 +17627,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_SP2_Data.Supergirl_B_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_SP02.SkillLegend_Supergirl_B_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -17162,11 +17639,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_SP3_Data.Supergirl_B_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_SP03.SkillLegend_Supergirl_B_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -17174,11 +17651,19 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_Passive_Data.Supergirl_B_Passive_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_Passive01.SkillLegend_Supergirl_B_Passive01",
     "effects": [
      {
       "type": "GeneralDescriptor",
-      "text": "{val} Damage tag-in attack"
+      "text": "On Tag-In, deal {val} damage with an unblockable knockback attack"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "Her Tag-Ins can interrupt attacks, including <White>Specials</>"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "<White>Specials</> interrupted by <White>Kyrptonian Slam</> grant her {percentDamage} Damage and {critChance} Critical Attack Chance for {duration} {sec}"
      }
     ]
    },
@@ -17186,11 +17671,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -17285,7 +17770,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_SP1_Data.Supergirl_CW_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_SP01.SkillLegend_Supergirl_CW_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -17297,11 +17782,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_SP2_Data.Supergirl_CW_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_SP02.SkillLegend_Supergirl_CW_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "FreezeDuration",
@@ -17315,11 +17800,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_SP3_Data.Supergirl_CW_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_SP03.SkillLegend_Supergirl_CW_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -17327,7 +17812,7 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_Passive_Data.Supergirl_CW_Passive_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_Passive01.SkillLegend_Supergirl_CW_Passive01",
     "effects": [
      {
       "type": "BasicStatBoost",
@@ -17351,11 +17836,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -17450,11 +17935,11 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_DCU_SP1_Data.Supergirl_DCU_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/Supergirl_DCU_SP1_Data.Supergirl_DCU_SP1_Data",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -17466,11 +17951,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 5,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_DCU_SP2_Data.Supergirl_DCU_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/Supergirl_DCU_SP2_Data.Supergirl_DCU_SP2_Data",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -17482,11 +17967,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_DCU_SP3_Data.Supergirl_DCU_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/Supergirl_DCU_SP3_Data.Supergirl_DCU_SP3_Data",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -17498,7 +17983,7 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_DCU_Passive2_Data.Supergirl_DCU_Passive2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_DCU_Passive02.SkillLegend_Supergirl_DCU_Passive02",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -17518,11 +18003,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_DCU_Super_Data.Supergirl_DCU_Super_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/Supergirl_DCU_Super_Data.Supergirl_DCU_Super_Data",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -17534,7 +18019,7 @@
     "slot": "Passive2",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_DCU_Passive3_Data.Supergirl_DCU_Passive3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_DCU_Passive03.SkillLegend_Supergirl_DCU_Passive03",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -17550,7 +18035,7 @@
     "slot": "Passive3",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_DCU_Passive1_Data.Supergirl_DCU_Passive1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_DCU_Passive01.SkillLegend_Supergirl_DCU_Passive01",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -17639,11 +18124,11 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_SP1_Data.Supergirl_GS_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_SP01.SkillLegend_Supergirl_GS_SP01",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -17655,11 +18140,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_SP2_Data.Supergirl_GS_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_SP02.SkillLegend_Supergirl_GS_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "PowerDrain",
@@ -17673,11 +18158,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_SP3_Data.Supergirl_GS_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_SP03.SkillLegend_Supergirl_GS_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "PowerGenRate",
@@ -17691,7 +18176,7 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_Passive1_Data.Supergirl_GS_Passive1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_Passive01.SkillLegend_Supergirl_GS_Passive01",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -17707,11 +18192,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_Super_Data.Supergirl_GS_Super_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_Supermove.SkillLegend_Supergirl_GS_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -17723,7 +18208,7 @@
     "slot": "Passive2",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_Passive2_Data.Supergirl_GS_Passive2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_Passive02.SkillLegend_Supergirl_GS_Passive02",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -17739,7 +18224,7 @@
     "slot": "Passive3",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_Passive3_Data.Supergirl_GS_Passive3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_Passive03.SkillLegend_Supergirl_GS_Passive03",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -17768,7 +18253,7 @@
      },
      {
       "type": "GeneralDescriptor",
-      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}"
+      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}.\r\n<Yellow>Unhittable:</> Ignore all incoming attacks."
      }
     ]
    }
@@ -17825,7 +18310,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SP1_Data.Supergirl_PG_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_SP01.SkillLegend_Supergirl_PG_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -17837,11 +18322,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SP2_Data.Supergirl_PG_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_SP02.SkillLegend_Supergirl_PG_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -17849,11 +18334,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SP3_Data.Supergirl_PG_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_SP03.SkillLegend_Supergirl_PG_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -17861,7 +18346,7 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_Passive_Data.Supergirl_PG_Passive_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_Passive01.SkillLegend_Supergirl_PG_Passive01",
     "effects": [
      {
       "type": "SpecialCost",
@@ -17882,11 +18367,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SUPER_Data.Supergirl_PG_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_Supermove.SkillLegend_Supergirl_PG_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -17925,7 +18410,7 @@
      },
      {
       "type": "GeneralDescriptor",
-      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}"
+      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}.\r\n<Yellow>Unhittable:</> Ignore all incoming attacks."
      }
     ]
    }
@@ -18479,11 +18964,11 @@
     "BaseEffect": 0.10000000149011612
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_0",
-    "EffectGroupType": "ECharacterEffectGroupType::PowerGeneration",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "88B829044A038C114C5A159551A4B164",
-    "BaseEffect": 0.15000000596046448
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Superman_BR",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "5A6147124F435808CE59D5B3646E6C93",
+    "BaseEffect": 0.20000000298023224
    }
   },
   "starTableOverride": null,
@@ -18492,11 +18977,11 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_SP1_Data.Superman_BR_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_SP01.SkillLegend_Superman_BR_SP01",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -18508,15 +18993,15 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_SP2_Data.Superman_BR_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_SP02.SkillLegend_Superman_BR_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
-      "text": "{time} seconds of {percent} Damage reflecting back to the opponent with the least amount of Health"
+      "text": "<Yellow>Reflect Shield</> ({percentReflect} Damage) for {duration} {sec}.\r\nReflects damage onto the opponent with the lowest Health."
      }
     ]
    },
@@ -18524,11 +19009,15 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 5,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_SP3_Data.Superman_BR_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_SP03.SkillLegend_Superman_BR_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "If <White>Force Shield</> (<White>Passive 2</>) was active, his opponent uses a random <White>Special</> at double Power Cost"
      }
     ]
    },
@@ -18536,11 +19025,11 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_Passive1_Data.Superman_BR_Passive1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_Passive01.SkillLegend_Superman_BR_Passive01",
     "effects": [
      {
       "type": "GeneralDescriptor",
-      "text": "Has a {percent} chance to not reset the combo counter"
+      "text": "{percent} chance for successful <White>Specials</> by <Purple>Legendary</> heroes to not reset the Combo Meter"
      }
     ]
    },
@@ -18548,15 +19037,15 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_Super_Data.Superman_BR_Super_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_Supermove.SkillLegend_Superman_BR_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
-      "text": "Steal ALL Power from the opponent"
+      "text": "Steal the entire Power Bar from the active opponent.\r\nIgnore <Yellow>Power Steal Immunity</>."
      }
     ]
    },
@@ -18564,15 +19053,15 @@
     "slot": "Passive2",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_Passive2_Data.Superman_BR_Passive2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_Passive02.SkillLegend_Superman_BR_Passive02",
     "effects": [
      {
       "type": "GeneralDescriptor",
-      "text": "Heals for {percent} of the damage his teammates receive"
+      "text": "Heal {percent} of damage taken by teammates"
      },
      {
       "type": "GeneralDescriptor",
-      "text": "Gains {percent1} Bonus Damage each time teammates lose more than {percent2} of their total Health"
+      "text": "{percentDamage} Damage when a teammate loses more than {percentHealth} of their total Health.\r\nStacks {stacks} times. Lasts the entire match."
      }
     ]
    },
@@ -18580,11 +19069,11 @@
     "slot": "Passive3",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_Passive3_Data.Superman_BR_Passive3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_Passive03.SkillLegend_Superman_BR_Passive03",
     "effects": [
      {
       "type": "GeneralDescriptor",
-      "text": "Spreads {percent1} Damage he receives between his teammates when he has less than {percent2} Health"
+      "text": "While below {percentHealth} Health, {percentDamage} of damage taken is redirected onto teammates"
      }
     ]
    },
@@ -18655,11 +19144,11 @@
     "BaseEffect": 0.05000000074505806
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_0",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "7546CCAE4619709C125E18BE40B36CC7",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.15000000596046448
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Superman_BVS",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "1F9A2A784CBA04D22D9C218A8521B6C8",
+    "BaseEffect": 5.0
    }
   },
   "starTableOverride": [
@@ -18940,7 +19429,7 @@
      },
      {
       "type": "GeneralDescriptor",
-      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}"
+      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}.\r\n<Yellow>Unhittable:</> Ignore all incoming attacks."
      }
     ]
    }
@@ -18969,26 +19458,27 @@
   "gearSet": {
    "TwoPieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Health",
-    "PreresolvedDescriptionText": "{val} Health",
+    "StatToBoost": "EBoostableStat::Defense",
+    "EffectName": "GearSet_TwoPieceEffect",
+    "PreresolvedDescriptionText": "{val} Defense",
     "PreresolvedDescriptionKey": "DD71AAF64E0B5A6426E82D9BFEEDECD7",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
+    "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
-    "StatToBoost": "EBoostableStat::Defense",
-    "PreresolvedDescriptionText": "{val} Defense",
-    "PreresolvedDescriptionKey": "D4B41BCC48465C1DD3DB3A95490D612E",
-    "BaseEffect": 0.10000000149011612
-   },
-   "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_3",
     "StatToBoost": "EBoostableStat::Attack",
+    "EffectName": "GearSet_ThreePieceEffect",
     "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "7F6507504B5E58DA2EE0669247AD5742",
+    "PreresolvedDescriptionKey": "D4B41BCC48465C1DD3DB3A95490D612E",
     "bIsPercentBoost": true,
     "BaseEffect": 0.15000000596046448
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_1",
+    "DescriptionTextOverride": "Gear5SetBonus_Superman_L",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "2A96DDF244F6EB44E362F3A23CA9DB8D",
+    "BaseEffect": 0.009999999776482582
    }
   },
   "starTableOverride": null,
@@ -19650,20 +20140,19 @@
     "BaseEffect": 0.10000000149011612
    },
    "ThreePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Health",
-    "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "2AF26ED24AF452262065F381A7F223E9",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
-   },
-   "FivePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_4",
     "StatToBoost": "EBoostableStat::Attack",
     "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "50DD282C4FA1C4A725E66FA072E7BBAB",
+    "PreresolvedDescriptionKey": "209743014227E387ADE4FCB54B9D8D41",
     "bIsPercentBoost": true,
     "BaseEffect": 0.10000000149011612
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_1",
+    "DescriptionTextOverride": "Gear5SetBonus_TheFlash_80",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "6D0A8230432BA44A4068CEAC285DD1D1",
+    "BaseEffect": 5.0
    }
   },
   "starTableOverride": null,
@@ -21001,25 +21490,26 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_0",
-    "StatToBoost": "EBoostableStat::Health",
-    "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "3EE58E4D4826552DC49D63BBADBEDAB4",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05999999865889549
-   },
-   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_5",
     "StatToBoost": "EBoostableStat::CriticalHitChance",
+    "EffectName": "GearSet_TwoPieceEffect",
     "PreresolvedDescriptionText": "{val} Critical Attack chance",
-    "PreresolvedDescriptionKey": "855EC0E74CABFC222E40519A9EFF5F41",
+    "PreresolvedDescriptionKey": "16FBA0D74B454AB43DCF578E1FAD8911",
+    "BaseEffect": 0.11999999731779099
+   },
+   "ThreePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_PowerGenRate_0",
+    "EffectName": "GearSet_ThreePieceEffect",
+    "PreresolvedDescriptionText": "{val} Power generation {time}",
+    "PreresolvedDescriptionKey": "5588AD454247C25D855D1BAE3D7A930F",
     "BaseEffect": 0.11999999731779099
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_0",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "61D8886A4693C531A3C90895B321DA17",
-    "BaseEffect": 0.11999999731779099
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Joker_M",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "04F6AC7C4E37151F6C5BE1A951B7F81F",
+    "BaseEffect": 0.009999999776482582
    }
   },
   "starTableOverride": null,
@@ -21723,12 +22213,11 @@
     "BaseEffect": 0.10000000149011612
    },
    "FivePieceEffect": {
-    "__ref__": "CharacterEffectDefinition_BasicStatBoost_1",
-    "StatToBoost": "EBoostableStat::Attack",
-    "PreresolvedDescriptionText": "{val} Attack",
-    "PreresolvedDescriptionKey": "C9CFC5FA40B0584589E09BB876F87241",
-    "bIsPercentBoost": true,
-    "BaseEffect": 0.05000000074505806
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5Bonus_WonderWoman_84",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "1AED35C24858560859A31FA10F5C50C2",
+    "BaseEffect": 0.5
    }
   },
   "starTableOverride": [
@@ -22005,7 +22494,7 @@
      },
      {
       "type": "GeneralDescriptor",
-      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}"
+      "text": "{chance} chance after a successful Special to become <Yellow>Unhittable</> for {seconds} {sec}.\r\n<Yellow>Unhittable:</> Ignore all incoming attacks."
      }
     ]
    }
@@ -22679,24 +23168,25 @@
   "threatTraitsMultiplier": 1.2000000476837158,
   "gearSet": {
    "TwoPieceEffect": {
-    "__ref__": "CharacterEffectDefinition_PowerGenRate_1",
-    "PreresolvedDescriptionText": "{val} Power generation {time}",
-    "PreresolvedDescriptionKey": "E042F4544D6DED7FAE9FFD9DD251866A",
-    "BaseEffect": 0.05000000074505806
-   },
-   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_BasicStatBoost_5",
     "StatToBoost": "EBoostableStat::Health",
     "PreresolvedDescriptionText": "{val} Health",
-    "PreresolvedDescriptionKey": "2CED4DCB4F7953FFB7CAB2A60664BB13",
+    "PreresolvedDescriptionKey": "E3B2CF024FAE07B051971890E3EF7BB9",
     "bIsPercentBoost": true,
     "BaseEffect": 0.10000000149011612
    },
-   "FivePieceEffect": {
+   "ThreePieceEffect": {
     "__ref__": "CharacterEffectDefinition_CritDamage_0",
     "PreresolvedDescriptionText": "{val} Critical Attack Damage ",
-    "PreresolvedDescriptionKey": "61098B98452DA264CF6367AE929A0E43",
+    "PreresolvedDescriptionKey": "20689DE2417423A5045F00982EB42EF0",
     "BaseEffect": 0.15000000596046448
+   },
+   "FivePieceEffect": {
+    "__ref__": "CharacterEffectDefinition_CustomBonus_0",
+    "DescriptionTextOverride": "Gear5SetBonus_Zatanna_A",
+    "EffectName": "GearSet_FivePieceEffect",
+    "PreresolvedDescriptionKey": "2E8052A2445D3D10F826E48409299FA5",
+    "BaseEffect": 0.5
    }
   },
   "starTableOverride": null,
@@ -41186,7 +41676,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_AR_SP1_Data.Supergirl_AR_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_AR_SP01.SkillLegend_Supergirl_AR_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -41197,7 +41687,7 @@
       "base": 0.25,
       "perLevel": 0.002199999988079071,
       "isPercent": true,
-      "text": "{val} Damage for Special 1 to Might opponents"
+      "text": "{val} Damagefor Special 1 to Might opponents"
      },
      {
       "type": "GeneralDescriptor",
@@ -41209,11 +41699,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_AR_SP2_Data.Supergirl_AR_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_AR_SP02.SkillLegend_Supergirl_AR_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -41229,18 +41719,18 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 5,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_AR_SP3_Data.Supergirl_AR_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_AR_SP03.SkillLegend_Supergirl_AR_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "DamageBoost",
       "base": 0.25,
       "perLevel": 0.002199999988079071,
       "isPercent": true,
-      "text": "{val} Damage for Special 3 to burning opponents"
+      "text": "{val} Damagefor Special 3 to burning opponents"
      },
      {
       "type": "GeneralDescriptor",
@@ -41270,11 +41760,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -41435,7 +41925,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_A_SP1_Data.Supergirl_A_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_A_SP01.SkillLegend_Supergirl_A_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -41447,11 +41937,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_A_SP2_Data.Supergirl_A_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_A_SP02.SkillLegend_Supergirl_A_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -41459,11 +41949,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_A_SP3_Data.Supergirl_A_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_A_SP03.SkillLegend_Supergirl_A_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -41471,7 +41961,7 @@
     "slot": "Passive",
     "enabled": false,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_A_Passive_Data.Supergirl_A_Passive_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_A_Passive01.SkillLegend_Supergirl_A_Passive01",
     "effects": [
      {
       "type": "NoSpecialCost",
@@ -41485,11 +41975,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -41639,7 +42129,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_SP1_Data.Supergirl_B_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_SP01.SkillLegend_Supergirl_B_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -41651,11 +42141,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_SP2_Data.Supergirl_B_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_SP02.SkillLegend_Supergirl_B_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -41663,11 +42153,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_SP3_Data.Supergirl_B_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_SP03.SkillLegend_Supergirl_B_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -41682,11 +42172,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -41826,11 +42316,11 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_SP1_Data.Supergirl_CW_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_SP01.SkillLegend_Supergirl_CW_SP01",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -41838,11 +42328,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_SP2_Data.Supergirl_CW_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_SP02.SkillLegend_Supergirl_CW_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "FreezeDuration",
@@ -41856,11 +42346,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_SP3_Data.Supergirl_CW_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_SP03.SkillLegend_Supergirl_CW_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -41875,11 +42365,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -42029,11 +42519,11 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_SP1_Data.Supergirl_GS_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_SP01.SkillLegend_Supergirl_GS_SP01",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -42045,11 +42535,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_SP2_Data.Supergirl_GS_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_SP02.SkillLegend_Supergirl_GS_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "PowerDrain",
@@ -42063,11 +42553,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_SP3_Data.Supergirl_GS_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_SP03.SkillLegend_Supergirl_GS_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "PowerGenRate",
@@ -42097,11 +42587,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_GS_Super_Data.Supergirl_GS_Super_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_GS_Supermove.SkillLegend_Supergirl_GS_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -42277,7 +42767,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SP1_Data.Supergirl_PG_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_SP01.SkillLegend_Supergirl_PG_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -42289,11 +42779,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SP2_Data.Supergirl_PG_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_SP02.SkillLegend_Supergirl_PG_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -42301,11 +42791,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SP3_Data.Supergirl_PG_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_SP03.SkillLegend_Supergirl_PG_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -42320,11 +42810,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SUPER_Data.Supergirl_PG_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_Supermove.SkillLegend_Supergirl_PG_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -42675,11 +43165,11 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_SP1_Data.Superman_BR_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_SP01.SkillLegend_Superman_BR_SP01",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -42691,11 +43181,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_SP2_Data.Superman_BR_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_SP02.SkillLegend_Superman_BR_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -42707,11 +43197,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 5,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_SP3_Data.Superman_BR_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_SP03.SkillLegend_Superman_BR_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -42719,7 +43209,7 @@
     "slot": "Passive",
     "enabled": false,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_Passive1_Data.Superman_BR_Passive1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_Passive01.SkillLegend_Superman_BR_Passive01",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -42731,11 +43221,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_Super_Data.Superman_BR_Super_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_Supermove.SkillLegend_Superman_BR_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "GeneralDescriptor",
@@ -42747,7 +43237,7 @@
     "slot": "Passive2",
     "enabled": false,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_Passive2_Data.Superman_BR_Passive2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_Passive02.SkillLegend_Superman_BR_Passive02",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -42763,7 +43253,7 @@
     "slot": "Passive3",
     "enabled": false,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Superman_BR_Passive3_Data.Superman_BR_Passive3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_Passive03.SkillLegend_Superman_BR_Passive03",
     "effects": [
      {
       "type": "GeneralDescriptor",
@@ -58373,7 +58863,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_SP1_Data.Supergirl_B_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_SP01.SkillLegend_Supergirl_B_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -58385,11 +58875,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_SP2_Data.Supergirl_B_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_SP02.SkillLegend_Supergirl_B_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -58397,11 +58887,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_SP3_Data.Supergirl_B_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_SP03.SkillLegend_Supergirl_B_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -58409,11 +58899,11 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_B_Passive_Data.Supergirl_B_Passive_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_B_Boss_Passive01.SkillLegend_Supergirl_B_Boss_Passive01",
     "effects": [
      {
       "type": "GeneralDescriptor",
-      "text": "{val} Damage tag-in attack"
+      "text": "<White>Supermoves</> against an opponent with an active debuff also inflict <Yellow>Stun</> for {duration} {sec}."
      }
     ]
    },
@@ -58421,11 +58911,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -58565,7 +59055,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_SP1_Data.Supergirl_CW_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_SP01.SkillLegend_Supergirl_CW_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -58577,11 +59067,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_SP2_Data.Supergirl_CW_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_SP02.SkillLegend_Supergirl_CW_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      },
      {
       "type": "FreezeDuration",
@@ -58595,11 +59085,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_SP3_Data.Supergirl_CW_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_SP03.SkillLegend_Supergirl_CW_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -58607,7 +59097,7 @@
     "slot": "Passive",
     "enabled": true,
     "powerCost": 0,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_CW_Passive_Data.Supergirl_CW_Passive_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_CW_Passive01.SkillLegend_Supergirl_CW_Passive01",
     "effects": [
      {
       "type": "BasicStatBoost",
@@ -58631,11 +59121,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_SUPER_Data.Supergirl_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_Supermove.SkillLegend_Supergirl_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -58775,7 +59265,7 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SP1_Data.Supergirl_PG_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_SP01.SkillLegend_Supergirl_PG_SP01",
     "effects": [
      {
       "type": "SkillDOTDamage",
@@ -58787,11 +59277,11 @@
     "slot": "SP2",
     "enabled": true,
     "powerCost": 4,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SP2_Data.Supergirl_PG_SP2_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_SP02.SkillLegend_Supergirl_PG_SP02",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -58799,11 +59289,11 @@
     "slot": "SP3",
     "enabled": true,
     "powerCost": 7,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SP3_Data.Supergirl_PG_SP3_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_SP03.SkillLegend_Supergirl_PG_SP03",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -58818,11 +59308,11 @@
     "slot": "SuperMove",
     "enabled": true,
     "powerCost": 10,
-    "asset": "/Game/UI/Assets/Skills/Supergirl_PG_SUPER_Data.Supergirl_PG_SUPER_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Supergirl/SkillLegend_Supergirl_PG_Supermove.SkillLegend_Supergirl_PG_Supermove",
     "effects": [
      {
       "type": "SkillDamage",
-      "text": "{val} Damage "
+      "text": "{val} Damage"
      }
     ]
    },
@@ -59367,16 +59857,85 @@
     "slot": "SP1",
     "enabled": true,
     "powerCost": 3,
-    "asset": "/Game/UI/Assets/Skills/Superman_B_SP1_Data.Superman_B_SP1_Data",
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_SP01.SkillLegend_Superman_BR_SP01",
     "effects": [
      {
-      "type": "DOTDamage",
-      "base": 1.0,
-      "perLevel": 0.019999999552965164,
-      "isPercent": true,
-      "text": "{val} Damage over Time"
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "{chance} chance to steal {val} Power Bars"
      }
     ]
+   },
+   {
+    "slot": "SP2",
+    "enabled": false,
+    "powerCost": 0,
+    "asset": null,
+    "effects": []
+   },
+   {
+    "slot": "SP3",
+    "enabled": true,
+    "powerCost": 5,
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_SP03.SkillLegend_Superman_BR_SP03",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     },
+     {
+      "type": "GeneralDescriptor",
+      "text": "If <White>Force Shield</> (<White>Passive 2</>) was active, his opponent uses a random <White>Special</> at double Power Cost"
+     }
+    ]
+   },
+   {
+    "slot": "Passive",
+    "enabled": false,
+    "powerCost": 0,
+    "asset": null,
+    "effects": []
+   },
+   {
+    "slot": "SuperMove",
+    "enabled": true,
+    "powerCost": 10,
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_Supermove.SkillLegend_Superman_Supermove",
+    "effects": [
+     {
+      "type": "SkillDamage",
+      "text": "{val} Damage"
+     }
+    ]
+   },
+   {
+    "slot": "Passive2",
+    "enabled": true,
+    "powerCost": 0,
+    "asset": "/Game/UI/Assets/Skills/Heroes/Superman/SkillLegend_Superman_BR_Boss_Passive02.SkillLegend_Superman_BR_Boss_Passive02",
+    "effects": [
+     {
+      "type": "GeneralDescriptor",
+      "text": "When a Player Hero gains a timed Buff, it is converted into a DoT effect of the same duration"
+     }
+    ]
+   },
+   {
+    "slot": "Passive3",
+    "enabled": false,
+    "powerCost": 0,
+    "asset": null,
+    "effects": []
+   },
+   {
+    "slot": "ClassPassive",
+    "enabled": false,
+    "powerCost": 0,
+    "asset": null,
+    "effects": []
    }
   ]
  },
